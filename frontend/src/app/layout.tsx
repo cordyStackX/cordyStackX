@@ -1,4 +1,5 @@
 import React from "react";
+import ProvidersClientWrapper from "@/app/services/wagmi/client__provider";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import setting from "@/app/config/conf/setting.json"; 
@@ -63,9 +64,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <ProvidersClientWrapper>
         <Header />
         {children}
         <Footer />
+        </ProvidersClientWrapper>
       </body>
     </html>
   );

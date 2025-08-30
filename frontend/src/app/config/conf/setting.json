@@ -1,4 +1,8 @@
 {
     "domain__links": "https://portfolio-five-umber-jl2hcp0bpp.vercel.app/",
-    "openGraph": "https://portfolio-five-umber-jl2hcp0bpp.vercel.app/vercel.svg"
+    "openGraph": "https://portfolio-five-umber-jl2hcp0bpp.vercel.app/vercel.svg",
+    "wallet__connect_PRID": {
+        "Wallet__Connect": "",
+        "Based__Sepolia": ""
+    }
 }

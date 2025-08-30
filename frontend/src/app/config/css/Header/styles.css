@@ -1,0 +1,51 @@
+.header__container {
+    width: min(1366px, 100dvw);
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: clamp(0.8rem, 1vw, 1.3rem) 0;
+    position: relative;
+}
+.nav__bar {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.nav__bar ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    list-style: none;
+}
+.nav__bar li {
+    margin: 0 0.7rem;
+    padding: 0.5rem;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+.nav__bar a {
+    font-size: clamp(0.5rem, 1vw + 0.2rem, 1rem);
+}
+.logo__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.2rem;
+
+}
+.logo__links h3 {
+    margin: 0 0.5rem;
+    font-size: clamp(0.8rem, 1vw + 0.3rem, 1.3rem);
+}
+.wallet__connect {
+    margin: 0 1.2rem;
+    
+}
