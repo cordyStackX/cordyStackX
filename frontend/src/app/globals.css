@@ -1,7 +1,7 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+
+@import './config/conf/root__config.css';
+
+@import './config/css/styles.css';
 
 @media (prefers-color-scheme: dark) {
   :root {

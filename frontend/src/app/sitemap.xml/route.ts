@@ -1,10 +1,10 @@
 import { NextResponse } from 'next/server';
+import setting from '@/app/config/conf/setting.json';
 
 export async function GET() {
   // List your URLs here, or generate dynamically from data
   const urls = [
-    'https://cordy-portfolio.vercel.app/',
-    // Add more URLs as needed
+    setting.domain__links
   ];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
