@@ -6,7 +6,7 @@ export default function Header() {
         <header>
             <div className="header__container">
 
-                <a href="/" className="logo__links">
+                <a href="/page" className="logo__links">
                     <Image src="/vercel.svg"  alt="logo" width={40} height={40} />
                     <h3>Cordy Dev</h3>
                 </a>
