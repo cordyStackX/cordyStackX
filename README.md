@@ -1,4 +1,4 @@
-# Welcome to my GitHub Profile
+# Welcome to my GitHub
 Hi, I’m Cordy — currently exploring **Web2/Web3 development** 🚀🚀
 
 ## 📊 Stats
