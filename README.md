@@ -9,3 +9,5 @@ Hi, I’m Cordy — currently exploring **Web2/Web3 development** 🚀🚀
 
 ![Profile Views](https://komarev.com/ghpvc/?username=cordy-fullstack&color=blue)
 
+## 🔗 Portfolio | Milestone
+![Porfolio](https://portfolio-five-umber-jl2hcp0bpp.vercel.app/)
