@@ -2,11 +2,9 @@
 Hi, I’m Cordy — currently exploring **Web2/Web3 development** 🚀🚀
 
 ## 📊 Stats
-![Cordy's GitHub stats](https://github-readme-stats.vercel.app/api?username=cordy-fullstack&show_icons=true&theme=dark&cache_seconds=0)
-
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=cordyStackX&show_icons=true)
 ## 🖥️ Top Languages
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=cordy-fullstack&layout=compact&theme=dark)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=cordyStackX&size_weight=0.5&count_weight=0.5)
 
-![Profile Views](https://komarev.com/ghpvc/?username=cordy-fullstack&color=blue)
 
 ### 🔗 [<--Porfolio-->](https://portfolio-five-umber-jl2hcp0bpp.vercel.app/) | 👨‍💻 [<--Repository-->](https://github.com/cordy-fullstack/cordy-fullstack) 👨‍💻

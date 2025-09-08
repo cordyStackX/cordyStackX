@@ -37,10 +37,10 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Cordy Portfolio | Full Stack Developments",
+    title: "CordyStackX | Full Stack Web/Web3 Developments",
     description: "Cordy portfolio featuring innovative Web2 & Web3 projects, developer experiments, and cutting-edge web solutions.",
     url: setting.domain__links,
-    siteName: "Cordy Developments",
+    siteName: "CordyStackX",
     images: [
       {
         url: setting.openGraph,

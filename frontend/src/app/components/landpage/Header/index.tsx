@@ -25,7 +25,7 @@ export default function Header() {
 
                 <a href="/page" className={Header__css.logo__links}>
                     <Image src="/vercel.svg"  alt="logo" title="This is my logo" width={30} height={30} />
-                    <h3>Cordy Dev</h3>
+                    <h3>CordyStackX</h3>
                 </a>
 
                 <nav className={Header__css.nav__bar}>
