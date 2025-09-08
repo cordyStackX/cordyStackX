@@ -2,7 +2,7 @@
 Hi, I’m Cordy — currently exploring **Web2/Web3 development** 🚀🚀
 
 ## 📊 Stats
-![Cordy's GitHub stats](https://github-readme-stats.vercel.app/api?username=cordy-fullstack&show_icons=true&theme=dark)
+![Cordy's GitHub stats](https://github-readme-stats.vercel.app/api?username=cordy-fullstack&show_icons=true&theme=dark&cache_seconds=0)
 
 ## 🖥️ Top Languages
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=cordy-fullstack&layout=compact&theme=dark)
