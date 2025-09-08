@@ -1,8 +1,6 @@
 
 @import './config/conf/root__config.css';
 
-@import './config/css/styles.css';
-
 main {
   width: 100dvw;
   height: auto;

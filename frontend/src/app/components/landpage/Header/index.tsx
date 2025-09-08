@@ -1,17 +1,18 @@
 import Image from "next/image";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import { Header__css } from "@/app/config/css/landpage";
 
 export default function Header() {
     return(
         <header>
-            <div className="header__container">
+            <div className={Header__css.header__container}>
 
-                <a href="/page" className="logo__links">
+                <a href="/page" className={Header__css.logo__links}>
                     <Image src="/vercel.svg"  alt="logo" title="This is my logo" width={40} height={40} />
                     <h3>Cordy Dev</h3>
                 </a>
 
-                <nav className="nav__bar">
+                <nav className={Header__css.nav__bar}>
                     <ul>
                         
                         <li>
@@ -34,7 +35,7 @@ export default function Header() {
                         </li>
                     </ul>
                 </nav>
-                <div className="wallet__connect">
+                <div className={Header__css.wallet__connect}>
                     <ConnectButton
                         showBalance={false}
                         chainStatus="icon"
