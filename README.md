@@ -6,6 +6,6 @@ Hi, I’m Cordy — currently exploring **Web2/Web3 development** 🚀🚀
 ## 🖥️ Top Languages
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=cordyStackX&layout=compact&theme=dark)
 ## 👨‍💻 Coding Activity
-[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=cordyStackX)](https://github.com/anuraghazra/github-readme-stats)
+[![Harlok's WakaTime stats](https://github-readme-stats.vercel.app/api/wakatime?username=cordyStackX)](https://github.com/cordyStackX/github-readme-stats)
 
 ### 🔗 [<--Porfolio-->](https://portfolio-five-umber-jl2hcp0bpp.vercel.app/) | 👨‍💻 [<--Repository-->](https://github.com/cordy-fullstack/cordy-fullstack)
