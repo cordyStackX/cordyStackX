@@ -14,23 +14,13 @@ export default function Header() {
         <header>
             <div className={Header__css.header__container}>
 
-
                 <span className={Header__css.hambuger__toggle}>
                     <Hamburger toggled={isOpen} toggle={setOpen} />
                 </span>
                 
-                <div className={Header__css.hambuger__containers} style={{display: isOpen ? "flex" : "none"}}>
-
-                </div>
-
-                <a href="/page" className={Header__css.logo__links}>
-                    <Image src="/vercel.svg"  alt="logo" title="This is my logo" width={30} height={30} />
-                    <h3>CordyStackX</h3>
-                </a>
-
-                <nav className={Header__css.nav__bar}>
+                <div className={Header__css.hambuger__containers} style={{width: isOpen ? "100dvw" : "0", opacity: isOpen ? "1" : "0"}}>
+                    <nav className={Header__css.hamburger__nav__bar} style={{width: isOpen ? "70%" : "0"}}>
                     <ul>
-                        
                         <li>
                             <a href="#">Home</a>
                         </li>
@@ -41,7 +31,36 @@ export default function Header() {
                             <a href="#">Projects</a>
                         </li>
                         <li>
-                            <a href="#">Playground</a>
+                            <a href="#">Hackathons</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacts</a>
+                        </li>
+                        <li style={{margin: "20px 0"}}>
+                             <a href="#" className={Header__css.hamburger__logo__links}>
+                                <Image src="/vercel.svg"  alt="logo" title="This is my logo" width={40} height={40} style={{filter: "var(--image-invert)"}}/>
+                                <h3>CordyStackX</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+
+                <a href="#" className={Header__css.logo__links}>
+                    <Image src="/vercel.svg"  alt="logo" title="This is my logo" width={30} height={30} style={{filter: "var(--image-invert)"}}/>
+                    <h3>CordyStackX</h3>
+                </a>
+
+                <nav className={Header__css.nav__bar}>
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Projects</a>
                         </li>
                         <li>
                             <a href="#">Hackathons</a>
