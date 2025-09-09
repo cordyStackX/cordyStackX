@@ -9,7 +9,7 @@ Hi, I’m Cordy — currently exploring **Web2/Web3 development** 🚀🚀
 
 
 ## 👨‍💻 Coding Activity
-[![Cordy's WakaTime stats](https://cordystackxdata.vercel.app/api/wakatime?username=cordyStackX)](https://wakatime.com/@cordyStackX)
+[![Cordy's WakaTime stats](https://cordystackxdata.vercel.app/api/wakatime?username=cordyStackX&theme=dark)](https://wakatime.com/@cordyStackX)
 
 
 ## 🚀 Portfolio
