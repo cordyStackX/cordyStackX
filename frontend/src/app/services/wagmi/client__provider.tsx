@@ -4,7 +4,7 @@ import dynamic from 'next/dynamic';
 
 // Dynamically import WalletProviders with SSR disabled
 const WalletProviders = dynamic(() => import('./wagmi__providers'), {
-  ssr: true,
+  ssr: false,
 });
 
 export default function ProvidersClientWrapper({ children }: { children: ReactNode }) {
