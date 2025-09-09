@@ -16,4 +16,5 @@ Hi, I’m Cordy — currently exploring **Web2/Web3 development** 🚀🚀
 
 🔗 [<-- Porfolio Links -->](https://cordy-stack-x.vercel.app/)
 
-[![Readme Card](https://cordystackxdata.vercel.app/api/pin/?username=cordyStackX?theme=dark&repo=cordyStackX)](https://github.com/cordyStackX/cordyStackX.git)
+[![Readme Card](https://cordystackxdata.vercel.app/api/pin/?username=cordyStackX&repo=cordyStackX&theme=dark)](https://github.com/cordyStackX/cordyStackX)
+
