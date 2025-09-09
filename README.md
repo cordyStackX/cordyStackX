@@ -2,7 +2,7 @@
 Hi, I’m Cordy — currently exploring **Web2/Web3 development** 🚀🚀
 
 ## 📊 Stats
-![Cordy's GitHub stats](hhttps://cordystackxdata.vercel.app/api?username=cordyStackX&theme=dark)
+![Cordy's GitHub stats](https://cordystackxdata.vercel.app/api?username=cordyStackX&theme=dark)
 
 ## 🖥️ Top Languages
 ![Top Langs](https://cordystackxdata.vercel.app/api/top-langs/?username=cordyStackX&layout=compact&theme=dark)
