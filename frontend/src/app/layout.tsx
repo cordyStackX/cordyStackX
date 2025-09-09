@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cordy Portfolio | Full Stack Developments",
+  title: "CordyStackX | Full Stack Developments",
   description: "Cordy portfolio featuring innovative Web2 & Web3 projects, developer experiments, and cutting-edge web solutions.",
   alternates: {
     canonical: setting.domain__links,

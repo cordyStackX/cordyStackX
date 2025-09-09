@@ -14,7 +14,7 @@ import { CoreTestnet, BaseSepolia } from './';
 
 const config = getDefaultConfig({
   appName: 'Test Wallet App',
-  projectId: setting.wallet__connect_PRID.Wallet__Connect || process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || "",
+  projectId: setting.wallet__connect_PRID.Wallet__Connect ?? process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_I,
   chains: [CoreTestnet(), BaseSepolia()]
 });
 
