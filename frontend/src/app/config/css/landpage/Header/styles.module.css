@@ -46,14 +46,13 @@
     font-size: clamp(0.8rem, 1vw + 0.5rem, 1.1rem);
 }
 .wallet__connect {
-    margin: 0 1.2rem;
+    margin: 0 clamp(0.8rem, 1vw + 0.3rem, 1.2rem);
     font-size: clamp(0.8rem, 1vw + 0.5rem, 0.89rem);
 }
 .hambuger__toggle {
     display: none;
     z-index: 20;
 }
-
 .hambuger__containers {
     width: 0;
     height: 100dvh;
@@ -109,8 +108,5 @@
     }
     .hambuger__toggle {
         display: block;
-    }
-    .wallet__connect {
-        margin: 0 1rem;
     }
 }
