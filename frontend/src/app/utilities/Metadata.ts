@@ -3,7 +3,7 @@ import setting from "@/app/config/conf/setting.json";
 
 export default function MetadataUtils() {
     const metadata: Metadata = {
-        title: "CordyStackX | Full Stack Developments",
+        title: "CordyStackX | Full Stack Web/Web3 Developments",
         description: "Cordy portfolio featuring innovative Web2 & Web3 projects, developer experiments, and cutting-edge web solutions.",
         alternates: {
             canonical: setting.domain__links,
