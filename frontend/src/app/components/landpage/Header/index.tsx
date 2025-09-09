@@ -18,8 +18,8 @@ export default function Header() {
                     <Hamburger toggled={isOpen} toggle={setOpen} />
                 </span>
                 
-                <div className={Header__css.hambuger__containers} style={{width: isOpen ? "100dvw" : "0", opacity: isOpen ? "1" : "0"}}>
-                    <nav className={Header__css.hamburger__nav__bar} style={{width: isOpen ? "70%" : "0"}}>
+                <div className={`${Header__css.hambuger__containers} ${isOpen ? Header__css.hambuger__containers_open : ""}`}>
+                    <nav className={Header__css.hamburger__nav__bar}>
                     <ul>
                         <li>
                             <a href="#">Home</a>
