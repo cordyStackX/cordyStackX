@@ -4,7 +4,7 @@ export default function CoreTestnet() {
     // Custom Chain
     const coreTestnet = defineChain({
     id: 1114,
-    name: 'Core TestNet',
+    name: 'TCore',
     network: 'core-testnet',
     nativeCurrency: {
         name: 'tCORE2',
