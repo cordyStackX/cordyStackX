@@ -4,5 +4,8 @@
     "wallet__connect_PRID": {
         "Wallet__Connect": "67d2d578d855e579911095f9db6d4b29",
         "Based__Sepolia": ""
+    },
+    "links__src" : {
+        "Banner__Image" : "https://images.pexels.com/photos/262367/pexels-photo-262367.jpeg?_gl=1*vl2uhz*_ga*NDQ0MzQwNzYxLjE3NTc0OTIwMTg.*_ga_8JE65Q40S6*czE3NTc0OTIwMTckbzEkZzEkdDE3NTc0OTI4ODMkajQ4JGwwJGgw"
     }
 }

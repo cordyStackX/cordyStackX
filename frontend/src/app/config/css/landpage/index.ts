@@ -1,4 +1,6 @@
 
 import Header__css from "./Header/styles.module.css";
 
-export { Header__css };
+import Banner__css from "./Banner/style.module.css";
+
+export { Header__css, Banner__css };
