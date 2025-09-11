@@ -6,6 +6,14 @@
         "Based__Sepolia": ""
     },
     "links__src" : {
-        "Banner__Image" : "https://images.pexels.com/photos/262367/pexels-photo-262367.jpeg?_gl=1*vl2uhz*_ga*NDQ0MzQwNzYxLjE3NTc0OTIwMTg.*_ga_8JE65Q40S6*czE3NTc0OTIwMTckbzEkZzEkdDE3NTc0OTI4ODMkajQ4JGwwJGgw"
+        "Social__links" : {
+            "linked_in" : "https://www.linkedin.com/in/marc-giestin-louis-cordova-657849276",
+            "github" : "https://github.com/cordyStackX",
+            "facebook" : "https://www.facebook.com/cordyStackX/",
+            "twitter" : "https://x.com/cordyStackX",
+            "tiktok" : "https://www.tiktok.com/@cordystackx"
+        },
+        "Banner__Image" : "https://images.pexels.com/photos/262347/pexels-photo-262347.jpeg?_gl=1*1leroot*_ga*NDQ0MzQwNzYxLjE3NTc0OTIwMTg.*_ga_8JE65Q40S6*czE3NTc1Mjk3MDUkbzIkZzEkdDE3NTc1Mjk3MTQkajUxJGwwJGgw"
     }
+    
 }

@@ -9,12 +9,13 @@
 
   --image-invert: invert(1);
 
+  --image-grayScale: grayscale(0%);
+
   /* default global width */
   --global-width: min(1366px, 100dvw);
 
   --global-media-max-width: 800px;
 
-  /* For Testing Layout */
   --gray-spot: #d9d9d9;
 }
 
@@ -25,5 +26,6 @@
     --primary-text: #E0E0E0;
     --link-text: #BB86FC;
     --image-invert: invert(0);
+    --image-grayScale: grayscale(100%);
   }
 }

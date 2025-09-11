@@ -1,5 +1,10 @@
 import { Banner__css } from "@/app/config/css/landpage";
 import setting from "@/app/config/conf/setting.json";
+import { 
+    FaLinkedin, FaGithub, 
+    FaFacebook, FaTwitter, 
+    FaTiktok
+} from "react-icons/fa";
 import Image from "next/image";
 
 export default function Banner() {
@@ -8,8 +13,38 @@ export default function Banner() {
         <section>
             <div className={Banner__css.banner__container}>
                 <div className={Banner__css.banner__left_side}>
-                    <h1>CordyStackX</h1>
-                    <h4>Portfolio</h4>
+                    <span className={Banner__css.banner__left_side_title}>
+                        <h1>CordyStackX</h1>
+                        <h4>Portfolio</h4> 
+                    </span>
+                    <span className={Banner__css.banner__left_side_links}>
+                        <h3>FullStack Web & Web3 Dev |</h3>
+                        <a href={setting.links__src.Social__links.linked_in} target="_blank" rel="noopener noreferrer">
+                            <FaLinkedin size={30}/>
+                        </a>
+                        <a href={setting.links__src.Social__links.github} target="_blank" rel="noopener noreferrer">
+                            <FaGithub size={30}/>
+                        </a>
+                        <a href={setting.links__src.Social__links.facebook} target="_blank" rel="noopener noreferrer">
+                            <FaFacebook size={30}/>
+                        </a>
+                        <a href={setting.links__src.Social__links.twitter} target="_blank" rel="noopener noreferrer">
+                            <FaTwitter size={30}/>
+                        </a>
+                        <a href={setting.links__src.Social__links.tiktok} target="_blank" rel="noopener noreferrer">
+                            <FaTiktok size={30}/>
+                        </a>
+                    </span>
+                    <p>Full Stack Web & Web3 Developer building scalable, user-friendly applications. 
+                        Experienced in front-end and back-end development, integrating both Web2 and 
+                        decentralized technologies. Hackathon enthusiast, delivering innovative solutions 
+                        in projects like DoraHacks.
+                    </p>
+                    <div className={Banner__css.banner__left_side_buttons}>
+                        <span></span>
+                        <button>Build With Me</button>
+                    </div>
+                    
                 </div>
                 <div className={Banner__css.banner__right_side}>
                     <div className={Banner__css.banner__right_side__imageWrapper}>
@@ -18,7 +53,7 @@ export default function Banner() {
                         alt="Banner Image"
                         title="Building Gstatics"
                         width={1000}
-                        height={900}
+                        height={980}
                         unoptimized
                         />
                     </div>
