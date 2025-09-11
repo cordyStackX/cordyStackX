@@ -38,7 +38,7 @@ export default function Header() {
                         </li>
                         <li style={{margin: "20px 0"}}>
                              <a href="#" className={Header__css.hamburger__logo__links}>
-                                <Image src="/logo.png"  alt="logo" title="This is my logo" width={40} height={40} style={{filter: "var(--image-invert)"}}/>
+                                <Image src="/logo.svg"  alt="logo" title="This is my logo" width={40} height={40} style={{filter: "var(--image-invert)"}}/>
                                 <h3>CordyStackX</h3>
                             </a>
                         </li>

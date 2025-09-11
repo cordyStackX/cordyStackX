@@ -11,7 +11,7 @@
 .header__container {
     width: var(--global-width);
     height: inherit;
-    padding: clamp(0.8rem, 1vw + 0.4rem, 1.2rem);
+    margin: clamp(0.8rem, 1vw + 0.4rem, 1.2rem) 0;
 }
 .nav__bar {
     width: auto;
@@ -66,6 +66,7 @@
     overflow: hidden;
     box-shadow: 0px 0px 20px 10px #000;
     background-color: var(--background);
+    margin: 0;
 }
 .hamburger__nav__bar ul {
     width: 100%;
