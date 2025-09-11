@@ -18,7 +18,7 @@ export default function Banner() {
                         <h4>Portfolio</h4> 
                     </span>
                     <span className={Banner__css.banner__left_side_links}>
-                        <h3>FullStack Web & Web3 Dev |</h3>
+                        <h3>FullStack Web & Web3 Dev </h3>
                         <a href={setting.links__src.Social__links.linked_in} target="_blank" rel="noopener noreferrer">
                             <FaLinkedin size={30}/>
                         </a>
