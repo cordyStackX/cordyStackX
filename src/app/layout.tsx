@@ -1,6 +1,6 @@
 import React from "react";
 
-import { MetadataUtils } from "./utilities";
+import { MetadataUtils, Json_LD } from "./utilities";
 
 import {
     ProvidersClientWrapper
@@ -28,6 +28,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(Json_LD()) }}
+        />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <ProvidersClientWrapper>
         {children}

@@ -43,6 +43,10 @@ export default function MetadataUtils() {
             locale: "en-US",
             type: "website",
         },
+         other: {
+            "article:publisher": setting.links__src.Social__links.github,
+            "twitter:creator": "@CordyStackX",
+        },                                  
     };
 
     return metadata;
