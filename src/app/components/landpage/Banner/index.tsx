@@ -14,11 +14,11 @@ export default function Banner() {
             <div className={Banner__css.banner__container}>
                 <div className={Banner__css.banner__left_side}>
                     <span className={Banner__css.banner__left_side_title}>
-                        <h1>CordyStackX</h1>
+                        <h1>Full Stack Web/Web3 Developer – CordyStackX</h1>
                         <h4>Portfolio</h4> 
                     </span>
                     <span className={Banner__css.banner__left_side_links}>
-                        <h3>FullStack Web & Web3 Dev </h3>
+                        <h2>Featured Web3 Projects </h2>
                         <a href={setting.links__src.Social__links.linked_in} target="_blank" rel="noopener noreferrer">
                             <FaLinkedin size={30}/>
                         </a>
@@ -54,6 +54,7 @@ export default function Banner() {
                         title="Building Gstatics"
                         width={1000}
                         height={980}
+                        priority={false}
                         unoptimized
                         />
                     </div>

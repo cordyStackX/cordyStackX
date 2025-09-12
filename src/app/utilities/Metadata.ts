@@ -4,7 +4,7 @@ import setting from "@/app/config/conf/setting.json";
 export default function MetadataUtils() {
     const metadata: Metadata = {
         title: "CordyStackX | Full Stack Web/Web3 Developments",
-        description: "Cordy portfolio featuring innovative Web2 & Web3 projects, developer experiments, and cutting-edge web solutions.",
+        description: "CordyStackX portfolio of Full Stack Web & Web3 projects, including developer experiments, innovative web solutions, and cutting-edge blockchain apps.",
         alternates: {
             canonical: setting.domain__links,
         },
@@ -24,7 +24,7 @@ export default function MetadataUtils() {
         },
         openGraph: {
             title: "CordyStackX | Full Stack Web/Web3 Developments",
-            description: "Cordy portfolio featuring innovative Web2 & Web3 projects, developer experiments, and cutting-edge web solutions.",
+            description: "CordyStackX portfolio of Full Stack Web & Web3 projects, including developer experiments, innovative web solutions, and cutting-edge blockchain apps.",
             url: setting.domain__links,
             siteName: "CordyStackX",
             images: [
