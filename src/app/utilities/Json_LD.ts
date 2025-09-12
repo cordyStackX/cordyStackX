@@ -9,7 +9,7 @@ export default function Json_LD() {
     "url": setting.domain__links,
     "publisher": {
       "@type": "Person",
-      "name": "Cordy",
+      "name": "Cordova Marc Giestin Louis",
       "sameAs": [
         setting.links__src.Social__links.github,
       ]
