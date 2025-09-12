@@ -1,6 +1,6 @@
 {
     "domain__links": "https://cordy-stack-x.vercel.app/",
-    "openGraph": "https://cordy-stack-x.vercel.app/favicon.png",
+    "openGraph": "https://cordy-stack-x.vercel.app/og-image.png",
     "wallet__connect_PRID": {
         "Wallet__Connect": "67d2d578d855e579911095f9db6d4b29",
         "Based__Sepolia": ""
