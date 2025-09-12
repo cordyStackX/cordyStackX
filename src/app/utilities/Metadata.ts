@@ -19,6 +19,9 @@ export default function MetadataUtils() {
             "max-snippet": -1,
             },
         },
+         verification: {
+            google: "google9249e550c23b54d0.html",
+        },
         openGraph: {
             title: "CordyStackX | Full Stack Web/Web3 Developments",
             description: "Cordy portfolio featuring innovative Web2 & Web3 projects, developer experiments, and cutting-edge web solutions.",
