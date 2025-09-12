@@ -12,7 +12,6 @@ export default function Json_LD() {
       "name": "Cordy",
       "sameAs": [
         setting.links__src.Social__links.github,
-        setting.links__src.Social__links.linked_in
       ]
     }
   };
