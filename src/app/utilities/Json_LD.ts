@@ -16,7 +16,7 @@ export default function Json_LD() {
     },
     "logo": {
       "@type": "ImageObject",
-      "url": "https://cordy-stack-x.vercel.app/logo.png"
+      "url": setting.openGraph
     }
   };
 }
