@@ -13,6 +13,10 @@ export default function Json_LD() {
       "sameAs": [
         setting.links__src.Social__links.github,
       ]
+    },
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://cordy-stack-x.vercel.app/logo.png"
     }
   };
 }
