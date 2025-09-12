@@ -1,0 +1,4 @@
+.placeholder__container {
+    width: var(--global-width);
+    height: auto;
+}

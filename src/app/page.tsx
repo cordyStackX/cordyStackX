@@ -2,7 +2,7 @@
 import { 
   Header, 
   Banner,
-   
+  Placeholder
 } from '@/app/components';
 
 export default function Home() {
@@ -11,6 +11,7 @@ export default function Home() {
       <Header />
       <main>
         <Banner />
+        <Placeholder />
       </main>
     </>
   );

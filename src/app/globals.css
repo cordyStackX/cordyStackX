@@ -23,7 +23,7 @@ header {
 
 section {
   width: 100dvw;
-  height: clamp(690px, 100dvh, 980px);
+  height: auto;
   margin: 0 auto;
 }
 
