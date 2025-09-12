@@ -35,10 +35,10 @@ export default function Banner() {
                             <FaTiktok size={30}/>
                         </a>
                     </span>
-                    <p>Full Stack Web & Web3 Developer building scalable, user-friendly applications. 
-                        Experienced in front-end and back-end development, integrating both Web2 and 
-                        decentralized technologies. Hackathon enthusiast, delivering innovative solutions 
-                        in projects like DoraHacks.
+                    <p>Full Stack Web & Web3 Developer building scalable, 
+                        user-friendly applications. Experienced in both Web2 
+                        and decentralized technologies, with a passion for hackathons 
+                        (e.g., DoraHacks) and delivering innovative solutions.
                     </p>
                     <div className={Banner__css.banner__left_side_buttons}>
                         <span></span>
