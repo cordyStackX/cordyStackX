@@ -34,7 +34,7 @@
     flex-flow: column;
 }
 .nav__bar a {
-    font-size: clamp(0.5rem, 1vw + 0.2rem, 1rem);
+    font-size: clamp(0.5rem, 1vw + 0.3rem, 1rem);
 }
 .logo__links {
     margin: 0 clamp(0.5rem, 1vw + 0.3rem, 1.2rem);
