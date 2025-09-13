@@ -14,7 +14,7 @@
 /* Left Side */
 .about__left_side {
     width: min(500px, 100%);
-    height: clamp(800px, 100dvh, 800px);
+    height: 800px;
     position: relative;
     overflow: hidden;
 }
@@ -91,5 +91,14 @@
     .about__right_side {
         justify-content: flex-start;
         align-items: flex-start;
+    }
+    .about__left_side {
+        height: 700px;
+    }
+    .about__left_side_image_1 {
+        top: 20px;
+    }
+    .about__left_side_image_2 {
+        bottom: 20px;
     }
 }

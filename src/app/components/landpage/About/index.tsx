@@ -16,7 +16,6 @@ export default function About() {
                             width={420}
                             height={560}
                             priority={false}
-                        
                             />
                         </span>
                         <span className={About__css.about__left_side_image_2}>
@@ -27,10 +26,8 @@ export default function About() {
                             width={420}
                             height={420}
                             priority={false}
-                        
                             />
                         </span>
-                        
                     </div>    
                 </div>
                 <div className={About__css.about__right_side}>
