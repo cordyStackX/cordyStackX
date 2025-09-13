@@ -1,4 +1,28 @@
+/* Default */
+.placeholder__container, .placeholder__logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background {
+    background-color: var(--neutral-gray);
+    box-shadow: 0rem 0rem 2rem 0.3rem var(--shadows);
+}
+
 .placeholder__container {
     width: var(--global-width);
     height: auto;
+}
+
+.placeholder__logos {
+    overflow: auto;
+    width: 100%;
+    height: auto;
+    padding: 1.7rem 0;
+    justify-content: space-between;
+}
+
+.placeholder__image {
+    filter: var(--image-invert_2);
+    margin: 0 2rem;
 }

@@ -1,5 +1,6 @@
 import { Banner__css } from "@/app/config/css/landpage";
 import setting from "@/app/config/conf/setting.json";
+import image__src from "@/app/config/conf/images.json";
 import { 
     FaLinkedin, FaGithub, 
     FaFacebook, FaTwitter, 
@@ -49,7 +50,7 @@ export default function Banner() {
                 <div className={Banner__css.banner__right_side}>
                     <div className={Banner__css.banner__right_side__imageWrapper}>
                         <Image 
-                        src={setting.links__src.Banner__Image}
+                        src={image__src.banner.image__1}
                         alt="Banner Image"
                         title="Building Gstatics"
                         width={1000}

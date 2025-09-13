@@ -3,11 +3,15 @@
 :root {
   --background: #FAFAFA;
   --foreground: #171717;
+  --neutral-gray: #F0F0F0;
+  --shadows: #fff;
 
   --primary-text: #202020;
   --link-text: #1E88E5;
 
   --image-invert: invert(1);
+
+  --image-invert_2: invert(0);
 
   --image-grayScale: grayscale(0%);
 
@@ -23,9 +27,12 @@
   :root {
     --background: #121212;
     --foreground: #ededed;
+    --neutral-gray: #2A2A2A;
+    --shadows: #000;
     --primary-text: #E0E0E0;
     --link-text: #BB86FC;
     --image-invert: invert(0);
+    --image-invert_2: invert(1);
     --image-grayScale: grayscale(100%);
   }
 }

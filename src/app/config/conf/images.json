@@ -1,0 +1,12 @@
+{
+    "banner" : {
+        "image__1" : "https://images.pexels.com/photos/262347/pexels-photo-262347.jpeg?_gl=1*1leroot*_ga*NDQ0MzQwNzYxLjE3NTc0OTIwMTg.*_ga_8JE65Q40S6*czE3NTc1Mjk3MDUkbzIkZzEkdDE3NTc1Mjk3MTQkajUxJGwwJGgw"
+    },
+    "placeholder" : {
+        "image__1" : "/logoipsum-330.svg",
+        "image__2" : "/logoipsum-391.svg",
+        "image__3" : "/logoipsum-395.svg",
+        "image__4" : "/logoipsum-398.svg",
+        "image__5" : "/logoipsum-393.svg"
+    }
+}
