@@ -4,7 +4,7 @@ import image__src from "@/app/config/conf/images.json";
 
 export default function Placeholder() {
 
-    const image__width = 180, image__height = 70;
+    const image__width = 140, image__height = 70;
 
     return(
         <section className={Placeholder__css.background}>
