@@ -18,8 +18,6 @@
   /* default global width */
   --global-width: min(1366px, 100dvw);
 
-  --global-media-max-width: 800px;
-
   --gray-spot: #d9d9d9;
 }
 
@@ -33,6 +31,6 @@
     --link-text: #BB86FC;
     --image-invert: invert(0);
     --image-invert_2: invert(1);
-    --image-grayScale: grayscale(100%);
+    --image-grayScale: grayscale(70%);
   }
 }

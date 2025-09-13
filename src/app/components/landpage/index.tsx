@@ -5,5 +5,7 @@ export { default as Banner } from './Banner';
 
 export { default as Placeholder } from "./Placeholder";
 
+export { default as About } from "./About";
+
 export { default as Footer } from './Footer';
 

@@ -5,6 +5,7 @@ import {
     Header__hooks
 } from "@/app/modules";
 import Hamburger from "hamburger-react";
+import image__src from "@/app/config/conf/images.json";
 
 export default function Header() {
 
@@ -25,7 +26,7 @@ export default function Header() {
                             <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="#About">About</a>
                         </li>
                         <li>
                             <a href="#">Projects</a>
@@ -38,7 +39,7 @@ export default function Header() {
                         </li>
                         <li style={{margin: "20px 0"}}>
                              <a href="#" className={Header__css.hamburger__logo__links}>
-                                <Image src="/logo.svg"  alt="logo" title="This is my logo" width={40} height={40} style={{filter: "var(--image-invert)"}}/>
+                                <Image src={image__src.logo.image__1}  alt="logo" title="This is my logo" width={40} height={40} style={{filter: "var(--image-invert)"}}/>
                                 <h3>CordyStackX</h3>
                             </a>
                         </li>
@@ -47,7 +48,7 @@ export default function Header() {
                 </div>
 
                 <a href="#" className={Header__css.logo__links}>
-                    <Image src="/logo.svg"  alt="logo" title="This is my logo" width={30} height={30} style={{filter: "var(--image-invert)"}}/>
+                    <Image src={image__src.logo.image__1}  alt="logo" title="This is my logo" width={30} height={30} style={{filter: "var(--image-invert)"}}/>
                     <h3>CordyStackX</h3>
                 </a>
 
@@ -57,7 +58,7 @@ export default function Header() {
                             <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a href="#About">About</a>
                         </li>
                         <li>
                             <a href="#">Projects</a>

@@ -8,5 +8,12 @@
         "image__3" : "/logoipsum-395.svg",
         "image__4" : "/logoipsum-398.svg",
         "image__5" : "/logoipsum-393.svg"
+    },
+    "about" : {
+        "image__1" : "/CordyStackX.png",
+        "image__2" : "/face.png"
+    },
+    "logo" : {
+        "image__1" : "/logo.svg"
     }
 }
