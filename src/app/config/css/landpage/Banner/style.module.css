@@ -13,7 +13,7 @@
 /* Custom Config */
 .banner__container {
     width: var(--global-width);
-    height: clamp(690px, 100dvh, 980px);
+    height: clamp(690px, 100vh, 980px);
 }
 
 /* Left Sides */
