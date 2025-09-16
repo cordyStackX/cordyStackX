@@ -3,7 +3,8 @@ import {
   Header, 
   Banner,
   Placeholder,
-  About
+  About,
+  Static
 } from '@/app/components';
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
         <Banner />
         <Placeholder />
         <About />
+        <Static />
       </main>
     </>
   );

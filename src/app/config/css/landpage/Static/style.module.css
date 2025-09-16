@@ -1,0 +1,4 @@
+.static__container {
+    width: var(--global-width);
+    height: 100vh;
+}

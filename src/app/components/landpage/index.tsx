@@ -7,5 +7,7 @@ export { default as Placeholder } from "./Placeholder";
 
 export { default as About } from "./About";
 
+export { default as Static } from "./Static";
+
 export { default as Footer } from './Footer';
 

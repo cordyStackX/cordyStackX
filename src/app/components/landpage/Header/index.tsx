@@ -29,10 +29,10 @@ export default function Header() {
                             <a href="#About">About</a>
                         </li>
                         <li>
-                            <a href="#">Projects</a>
+                            <a href="#Static">Static</a>
                         </li>
                         <li>
-                            <a href="#">Hackathons</a>
+                            <a href="#">Project</a>
                         </li>
                         <li>
                             <a href="#">Contacts</a>
@@ -61,10 +61,10 @@ export default function Header() {
                             <a href="#About">About</a>
                         </li>
                         <li>
-                            <a href="#">Projects</a>
+                            <a href="#Static">Static</a>
                         </li>
                         <li>
-                            <a href="#">Hackathons</a>
+                            <a href="#">Project</a>
                         </li>
                         <li>
                             <a href="#">Contacts</a>
