@@ -13,6 +13,7 @@ export default function Header() {
 
     return(
         <header>
+            <div className={Header__css.overlay_blurr}></div>
             <div className={Header__css.header__container}>
 
                 <span className={Header__css.hambuger__toggle}>

@@ -8,9 +8,6 @@ export default function Services() {
                 <div className={Services__css.static__stat_1}>
                     
                 </div>
-                <div className={Services__css.static__stat_2}>
-                   
-                </div>
             </div>
         </section>
     );

@@ -19,6 +19,7 @@ header {
   height: auto;
   margin: 0 auto;
   z-index: 1;
+  backdrop-filter: blur(10px);
 }
 
 section {
