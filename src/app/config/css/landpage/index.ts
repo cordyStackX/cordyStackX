@@ -7,12 +7,12 @@ import Placeholder__css from "./Placeholder/styles.module.css";
 
 import About__css from "./About/styles.module.css";
 
-import Static__css from "./Static/style.module.css";
+import Services__css from "./Services/style.module.css";
 
 export { 
     Header__css, 
     Banner__css, 
     Placeholder__css,
     About__css,
-    Static__css
+    Services__css
 };
