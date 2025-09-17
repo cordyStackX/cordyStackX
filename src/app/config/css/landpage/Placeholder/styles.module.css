@@ -1,19 +1,19 @@
 /* Default */
-.placeholder__container, .placeholder__logos {
+.placeholder__container, 
+.placeholder__logos {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .background {
-    background-color: var(--neutral-gray);
-    box-shadow: 0rem 0rem 0.8rem 0.1rem var(--shadows);
+    box-shadow: 0rem -1.9rem 2rem 0.1rem var(--shadows);
 }
 
 .placeholder__container {
     width: var(--global-width);
     height: auto;
+    flex-flow: column;
 }
-
 .placeholder__logos {
     overflow: auto;
     width: 100%;

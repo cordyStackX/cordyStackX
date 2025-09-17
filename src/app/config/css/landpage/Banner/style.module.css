@@ -79,7 +79,7 @@
     clip-path: polygon(
         80% 0,   /* top */
         100% 0,  /* right */
-        70% 100%,  /* bottom */
+        100% 100%,  /* bottom */
         0 100%    /* left */
     );
 }
