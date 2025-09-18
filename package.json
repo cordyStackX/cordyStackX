@@ -16,6 +16,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
+    "@coinbase/onchainkit": "^1.0.2",
     "@ethereumjs/tx": "^10.0.0",
     "@rainbow-me/rainbowkit": "^2.2.8",
     "hamburger-react": "^2.5.2",
