@@ -16,16 +16,17 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
-    "@coinbase/onchainkit": "^1.0.2",
     "@ethereumjs/tx": "^10.0.0",
-    "@rainbow-me/rainbowkit": "^2.2.8",
+    "@reown/appkit": "^1.8.6",
+    "@reown/appkit-adapter-wagmi": "^1.8.6",
+    "@tanstack/react-query": "^5.89.0",
     "hamburger-react": "^2.5.2",
     "next": "^15.5.2",
     "react": "19.1.1",
     "react-dom": "19.1.1",
     "react-icons": "^5.5.0",
     "viem": "^2.36.0",
-    "wagmi": "^2.16.9"
+    "wagmi": "^2.17.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",

@@ -1,5 +1,4 @@
 import React from "react";
-
 import { MetadataUtils, Json_LD } from "./utilities";
 
 import {

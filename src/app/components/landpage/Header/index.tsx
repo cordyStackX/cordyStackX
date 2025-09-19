@@ -1,15 +1,20 @@
 import Image from "next/image";
-import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { Header__css } from "@/app/config/css/landpage";
 import {
-    Header__hooks
+    Header__hooks_useState,
 } from "@/app/modules";
 import Hamburger from "hamburger-react";
+
+import { useAccount } from "wagmi";
+import { WalletOptions, Account } from "@/app/services/wagmi";
+
 import image__src from "@/app/config/conf/images.json";
 
 export default function Header() {
+    const { isConnected } = useAccount();
+    const { isOpen, setOpen } = Header__hooks_useState();
 
-    const { isOpen, setOpen } = Header__hooks();
+    if ( isConnected ) return <Account />;
 
     return(
         <header>
@@ -73,12 +78,7 @@ export default function Header() {
                     </ul>
                 </nav>
                 <div className={Header__css.wallet__connect}>
-                    <ConnectButton
-                        showBalance={false}
-                        chainStatus="icon"
-                        accountStatus="avatar"
-                        label="Wallet Connect"
-                    />
+                    <WalletOptions />
                 </div>
             </div>
         </header>
