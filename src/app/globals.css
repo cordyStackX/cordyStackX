@@ -5,6 +5,8 @@ main {
   width: 100dvw;
   height: auto;
   margin: 0 auto;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 html,

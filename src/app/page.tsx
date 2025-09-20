@@ -8,13 +8,15 @@ import {
 } from '@/app/components';
 
 export default function Home() {
+
   return (
     <>
       <Header />
-      <main>
+      <main >
         <Banner />
         <Placeholder />
         <About />
+      
         <Services />
       </main>
     </>

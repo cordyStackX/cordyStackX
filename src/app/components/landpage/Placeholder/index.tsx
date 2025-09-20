@@ -19,7 +19,7 @@ export default function Placeholder() {
             style={{
                 opacity: PHolderIsInView ? 1 : 0,
                 transform: `scale(${PHolderIsInView ? "1" : "0.8"})`,
-                transition: "0.8s ease-in-out"
+                transition: "1s ease-in-out"
             }}
             >
                 <div className={Placeholder__css.placeholder__logos}>

@@ -4,7 +4,13 @@
     justify-content: center;
     align-items: center;
 }
-
+.static__section {
+    height: auto;
+    scroll-snap-align: start;      /* snap to the start of viewport */
+    scroll-snap-stop: always;
+    background: var(--background);
+    position: relative;
+}
 .static__container {
     width: var(--global-width);
     height: auto;
