@@ -10,7 +10,6 @@ export default function About() {
   const { ref: titleRef, isInView: titleInView } = useInView<HTMLHeadingElement>();
   const { ref: lineRef, isInView: lineInView } = useInView<HTMLDivElement>();
   const { ref: para1, isInView: para1InView } = useInView<HTMLDivElement>();
-  const { ref: para2, isInView: para2InView } = useInView<HTMLDivElement>();
 
   return (
     <section id="About" className={About__css.about__sections}>
@@ -90,11 +89,11 @@ export default function About() {
               web applications with speed, scalability, and modern design.
             </p>
             <p 
-            ref={para2}
+            ref={para1}
               style={{
-                transform: `translateX(${para2InView ? "0" : "-30px"})`,
-                opacity: para2InView ? "1" : "0",
-                transition: "0.5s ease-in-out",
+                transform: `translateX(${para1InView ? "0" : "-30px"})`,
+                opacity: para1InView ? "1" : "0",
+                transition: "0.5s 0.2s ease-in-out",
               }}
             >
               CordyStackX is my personal developer portfolio showcasing cutting-edge Full Stack Web and Web3 projects. Powered by

@@ -15,7 +15,6 @@
 .banner__sections {
     height: clamp(690px, 100vh, 980px);
     position: relative;
-    z-index: -9999;
 }
 .banner__container {
     width: var(--global-width);

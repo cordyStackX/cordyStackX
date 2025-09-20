@@ -8,6 +8,7 @@
 }
 .about__sections {
     background-color: var(--background);
+    position: relative;
 }
 
 .about__container {

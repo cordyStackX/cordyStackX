@@ -8,6 +8,7 @@
 }
 .placeholder__section {
     background-color: var(--background);
+    position: relative;
 }
 
 .placeholder__container {
