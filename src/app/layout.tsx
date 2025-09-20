@@ -1,5 +1,5 @@
 import React from "react";
-import { MetadataUtils, Json_LD } from "./utilities";
+import { MetadataUtils, Json_LD, Cursor } from "./utilities";
 
 import {
     ProvidersClientWrapper
@@ -18,6 +18,8 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
+
 export const metadata = MetadataUtils();
 
 export default function RootLayout({
@@ -34,6 +36,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Cursor />
         <ProvidersClientWrapper>
         {children}
         </ProvidersClientWrapper>

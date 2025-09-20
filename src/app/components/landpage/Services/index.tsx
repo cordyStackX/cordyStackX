@@ -73,14 +73,14 @@ export default function Services() {
                                     style={{
                                         opacity: isInView ? 1 : 0,
                                         transform: isInView ? "translateX(0)" : "translateX(-20px)",
-                                        transition: isInView ? `0.8s ease-out 0.3s` : "0s",
+                                        transition: `0.8s ease-out ${index * 0.2}s`,
                                     }}
                                     >{stat.name}</h3>
                                     <p
                                     style={{
                                         opacity: isInView ? 1 : 0,
                                         transform: isInView ? "translateX(0)" : "translateX(-20px)",
-                                        transition: isInView ? `0.8s ease-out 0.3s` : "0s",
+                                        transition: `0.8s ease-out ${index * 0.2}s`,
                                     }}
                                     >{stat.params}</p>
                                 </span>

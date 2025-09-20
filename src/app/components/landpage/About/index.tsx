@@ -21,9 +21,9 @@ export default function About() {
               className={About__css.about__left_side_image_1}
               ref={img1Ref}
               style={{
-                transform: `translateX(${img1InView ? "0" : "-50px"})`,
+                transform: `translateX(${img1InView ? "0" : "-20px"})`,
                 opacity: img1InView ? "1" : "0",
-                transition: "0.7s ease-in-out",
+                transition: "0.7s ease-out",
               }}
             >
               <Image
@@ -40,9 +40,9 @@ export default function About() {
               className={About__css.about__left_side_image_2}
               ref={img2Ref}
               style={{
-                transform: `translateX(${img2InView ? "0" : "50px"})`,
+                transform: `translateX(${img2InView ? "0" : "20px"})`,
                 opacity: img2InView ? "1" : "0",
-                transition: "0.7s ease-in-out",
+                transition: "0.7s ease-out",
               }}
             >
               <Image

@@ -9,14 +9,15 @@
     height: auto;
     background: var(--background);
     position: relative;
-    border: 1px solid var(--foreground);
+    border-top: 1px solid var(--foreground);
 }
 .static__container {
     width: var(--global-width);
     height: auto;
     margin: 0 auto;
     flex-flow: column;
-    border-top: 1px solid var(--foreground);
+    border: 1px solid var(--foreground);
+    padding: 1rem 0;
 }
 .static__title {
     flex-flow: column;
@@ -79,8 +80,7 @@
 }
 .static__stat:hover {
     backdrop-filter: blur(10px);
-    background: linear-gradient(125deg, var(--shadows), var(--foreground));
-    color: var(--background);
+    background: linear-gradient(125deg, var(--shadows), var(--neutral-gray));
 }
 .static__stat:hover button {
     bottom: 0;
