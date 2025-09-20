@@ -9,6 +9,7 @@
 .about__sections {
     background-color: var(--background);
     position: relative;
+    padding: 2rem 0;
 }
 
 .about__container {

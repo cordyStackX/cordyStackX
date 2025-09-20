@@ -10,6 +10,7 @@ export default function About() {
   const { ref: titleRef, isInView: titleInView } = useInView<HTMLHeadingElement>();
   const { ref: lineRef, isInView: lineInView } = useInView<HTMLDivElement>();
   const { ref: para1, isInView: para1InView } = useInView<HTMLDivElement>();
+  const { ref: para2, isInView: para2InView } = useInView<HTMLDivElement>();
 
   return (
     <section id="About" className={About__css.about__sections}>
@@ -63,7 +64,7 @@ export default function About() {
               style={{
                 transform: `translateX(${titleInView ? "0" : "20px"})`,
                 opacity: titleInView ? "1" : "0",
-                transition: "0.5s ease-in-out",
+                transition: "0.8s ease",
               }}
             >
               ABOUT ME
@@ -80,20 +81,20 @@ export default function About() {
             <p
             ref={para1}
               style={{
-                transform: `translateX(${para1InView ? "0" : "-30px"})`,
+                transform: `translateX(${para1InView ? "0" : "-20px"})`,
                 opacity: para1InView ? "1" : "0",
-                transition: "0.5s ease-in-out",
+                transition: para1InView ? "0.8s ease-out" : "0s",
               }}
             >
               Founder of CordyStackX | Full Stack Web & Web3 Developer | Next.js Enthusiast | Building innovative blockchain &
               web applications with speed, scalability, and modern design.
             </p>
             <p 
-            ref={para1}
+            ref={para2}
               style={{
-                transform: `translateX(${para1InView ? "0" : "-30px"})`,
-                opacity: para1InView ? "1" : "0",
-                transition: "0.5s 0.2s ease-in-out",
+                transform: `translateX(${para2InView ? "0" : "-20px"})`,
+                opacity: para2InView ? "1" : "0",
+                transition: para2InView ? "0.8s ease-out 0.2s" : "0s",
               }}
             >
               CordyStackX is my personal developer portfolio showcasing cutting-edge Full Stack Web and Web3 projects. Powered by

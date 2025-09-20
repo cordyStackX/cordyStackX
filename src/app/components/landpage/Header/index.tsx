@@ -14,8 +14,6 @@ export default function Header() {
     const { isConnected } = useAccount();
     const [ isOpen, setOpen ] = UseState(false);
 
-    if ( isConnected ) return <Account />;
-
     return(
         <header className={Header__css.header__header}>
             <div className={Header__css.overlay_blurr}></div>
@@ -78,7 +76,7 @@ export default function Header() {
                     </ul>
                 </nav>
                 <div className={Header__css.wallet__connect}>
-                    <WalletOptions />
+                    {isConnected ? <Account />  : <WalletOptions /> }
                 </div>
             </div>
         </header>

@@ -13,6 +13,56 @@
         "image__1" : "/CordyStackX.png",
         "image__2" : "/face.png"
     },
+    "services": {
+        "image__1": {
+            "name": "Vercel",
+            "imageSource": "https://www.svgrepo.com/show/327408/logo-vercel.svg",
+            "links": "https://vercel.com/",
+            "descriptions": "Seamless deployment platform for Next.js and modern web apps with global CDN and automatic scaling."
+        },
+        "image__2": {
+            "name": "PostgreSQL",
+            "imageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1163px-Postgresql_elephant.svg.png",
+            "links": "https://www.postgresql.org/",
+            "descriptions": "Reliable and powerful relational database for structured data and complex queries."
+        },
+        "image__3": {
+            "name": "Wagmi",
+            "imageSource": "https://wagmi.sh/logo-light.svg",
+            "links": "https://wagmi.sh/",
+            "descriptions": "React hooks library for building Ethereum and Web3 wallet-enabled applications."
+        },
+        "image__4": {
+            "name": "Hardhat",
+            "imageSource": "https://icon.icepanel.io/Technology/svg/Hardhat.svg",
+            "links": "https://hardhat.org/",
+            "descriptions": "Ethereum development environment for compiling, deploying, testing, and debugging smart contracts."
+        },
+        "image__5": {
+            "name": "GitHub",
+            "imageSource": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png",
+            "links": "https://github.com/",
+            "descriptions": "Version control and collaboration platform for managing code and CI/CD workflows."
+        },
+        "image__6": {
+            "name": "CI/CD",
+            "imageSource": "https://www.svgrepo.com/show/372275/ci-cd.svg",
+            "links": "https://github.com/features/actions",
+            "descriptions": "Automated pipelines to build, test, and deploy applications efficiently and reliably."
+        },
+        "image__7": {
+            "name": "Next.js",
+            "imageSource": "https://www.svgrepo.com/show/354112/nextjs.svg",
+            "links": "https://nextjs.org/",
+            "descriptions": "React framework for server-side rendering, static site generation, and optimized web applications."
+        },
+        "image__8": {
+            "name": "Express",
+            "imageSource": "https://cdn.worldvectorlogo.com/logos/expressjs.svg",
+            "links": "https://expressjs.com/",
+            "descriptions": "Minimal and flexible Node.js web application framework for building APIs and backend services."
+        }
+    },
     "logo" : {
         "image__1" : "/logo.svg"
     }
