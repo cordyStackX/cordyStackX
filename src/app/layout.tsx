@@ -1,5 +1,6 @@
 import React from "react";
 import { MetadataUtils, Json_LD, Cursor } from "./utilities";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import {
     ProvidersClientWrapper
@@ -40,6 +41,7 @@ export default function RootLayout({
         <ProvidersClientWrapper>
         {children}
         </ProvidersClientWrapper>
+        <SpeedInsights />
       </body>
     </html>
   );
