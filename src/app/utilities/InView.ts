@@ -10,7 +10,12 @@ export default function useInView<T extends HTMLElement>() {
     if (!element) return;
 
     const observer = new IntersectionObserver(
-      ([entry]) => setIsInView(entry.isIntersecting),
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+          observer.unobserve(entry.target);
+        }
+      },
       { threshold: 0.5 }
     );
 
