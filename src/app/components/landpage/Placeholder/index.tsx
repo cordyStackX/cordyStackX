@@ -1,14 +1,27 @@
 import { Placeholder__css } from "@/app/config/css/landpage";
 import Image from "next/image";
 import image__src from "@/app/config/conf/images.json";
+import { UseScroll__shadow } from "@/app/modules";
+import { useInView } from "@/app/utilities";
 
 export default function Placeholder() {
+    const { ref: PHolder, isInView: PHolderIsInView } = useInView<HTMLDivElement>();
 
     const image__width = 140, image__height = 70;
 
     return(
-        <section className={Placeholder__css.placeholder__section}>
-            <div className={Placeholder__css.placeholder__container}>
+        <section className={Placeholder__css.placeholder__section} 
+        style={{
+            boxShadow: `0rem -1.9rem 5rem ${UseScroll__shadow()}rem var(--shadows)`
+        }}
+        >
+            <div className={Placeholder__css.placeholder__container} ref={PHolder} 
+            style={{
+                opacity: PHolderIsInView ? 1 : 0,
+                transform: `scale(${PHolderIsInView ? "1" : "0.8"})`,
+                transition: "0.8s ease-in-out"
+            }}
+            >
                 <div className={Placeholder__css.placeholder__logos}>
                     <Image 
                     src={image__src.placeholder.image__1}

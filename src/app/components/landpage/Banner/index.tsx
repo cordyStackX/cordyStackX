@@ -7,12 +7,24 @@ import {
     FaTiktok
 } from "react-icons/fa";
 import Image from "next/image";
+import {
+    UseScroll__formula
+} from "@/app/modules";
+
 
 export default function Banner() {
 
+    const scrollShrink = UseScroll__formula();
+
     return(
         <section className={Banner__css.banner__sections}>
-            <div className={Banner__css.banner__container}>
+            <div className={Banner__css.banner__container} 
+            style={{
+                transform: `scale(${scrollShrink})`,
+                transformOrigin: "top center",
+                transition: "transform 100ms linear"
+            }}
+            >
                 <div className={Banner__css.banner__left_side}>
                     <span className={Banner__css.banner__left_side_title}>
                         <h1>Full Stack Web/Web3 Developer CordyStackX</h1>

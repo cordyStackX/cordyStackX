@@ -9,3 +9,5 @@ export { default as UseRef } from './custom__hooks/UseRef';
 export { default as UseState } from './custom__hooks/UseState';
 
 //Landpage
+
+export * from "./landpage";
