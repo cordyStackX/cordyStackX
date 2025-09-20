@@ -7,7 +7,7 @@ export default function Placeholder() {
     const image__width = 140, image__height = 70;
 
     return(
-        <section className={Placeholder__css.background}>
+        <section className={Placeholder__css.placeholder__section}>
             <div className={Placeholder__css.placeholder__container}>
                 <div className={Placeholder__css.placeholder__logos}>
                     <Image 

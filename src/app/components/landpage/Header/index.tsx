@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Header__css } from "@/app/config/css/landpage";
 import {
-    Header__hooks_useState,
+    UseState
 } from "@/app/modules";
 import Hamburger from "hamburger-react";
 
@@ -12,12 +12,12 @@ import image__src from "@/app/config/conf/images.json";
 
 export default function Header() {
     const { isConnected } = useAccount();
-    const { isOpen, setOpen } = Header__hooks_useState();
+    const [ isOpen, setOpen ] = UseState(false);
 
     if ( isConnected ) return <Account />;
 
     return(
-        <header>
+        <header className={Header__css.header__header}>
             <div className={Header__css.overlay_blurr}></div>
             <div className={Header__css.header__container}>
 

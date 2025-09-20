@@ -4,7 +4,7 @@ import image__src from "@/app/config/conf/images.json";
 
 export default function About() {
     return(
-        <section id="About">
+        <section id="About" className={About__css.about__sections}>
             <div className={About__css.about__container}>
                 <div className={About__css.about__left_side}>
                     <div>

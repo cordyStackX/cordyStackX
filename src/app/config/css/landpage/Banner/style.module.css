@@ -1,4 +1,5 @@
 /* Display Default */
+.banner__sections,
 .banner__container, 
 .banner__left_side, 
 .banner__right_side, 
@@ -11,9 +12,15 @@
     align-items: center;
 }
 /* Custom Config */
+.banner__sections {
+    height: clamp(690px, 100vh, 980px);
+    position: relative;
+    z-index: -9999;
+}
 .banner__container {
     width: var(--global-width);
     height: clamp(690px, 100vh, 980px);
+    position: fixed;
 }
 
 /* Left Sides */
@@ -82,15 +89,4 @@
         100% 100%,  /* bottom */
         0 100%    /* left */
     );
-}
-
-@media (max-width: 800px) {
-    .banner__right_side__imageWrapper {
-        clip-path: polygon(
-        100% 0,   /* top */
-        100% 0,  /* right */
-        100% 100%,  /* bottom */
-        0 100%    /* left */
-    );
-    }
 }

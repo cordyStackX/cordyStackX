@@ -11,7 +11,7 @@ import Image from "next/image";
 export default function Banner() {
 
     return(
-        <section>
+        <section className={Banner__css.banner__sections}>
             <div className={Banner__css.banner__container}>
                 <div className={Banner__css.banner__left_side}>
                     <span className={Banner__css.banner__left_side_title}>

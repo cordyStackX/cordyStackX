@@ -1,4 +1,5 @@
-.static__container {
+.static__container, 
+.static__status {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,4 +8,8 @@
 .static__container {
     width: var(--global-width);
     height: auto;
+}
+
+.static__status {
+    width: 100%;
 }
