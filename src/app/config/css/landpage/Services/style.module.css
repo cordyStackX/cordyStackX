@@ -9,7 +9,7 @@
     height: auto;
     background: var(--background);
     position: relative;
-    border-top: 1px solid var(--foreground);
+    border: 1px solid var(--foreground);
 }
 .static__container {
     width: var(--global-width);
@@ -17,7 +17,7 @@
     margin: 0 auto;
     flex-flow: column;
     border: 1px solid var(--foreground);
-    padding: 1rem 0;
+    padding: 1rem 0 0 0;
 }
 .static__title {
     flex-flow: column;

@@ -63,6 +63,7 @@ export default function Services() {
                                     <Image 
                                         src={stat.image}
                                         alt={`${stat.name} Logo`}
+                                        title={`${stat.name}`}
                                         width={100}
                                         height={100}
                                         unoptimized

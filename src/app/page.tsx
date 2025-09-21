@@ -4,7 +4,8 @@ import {
   Banner,
   Placeholder,
   About,
-  Services
+  Services,
+  Projects
 } from '@/app/components';
 
 export default function Home() {
@@ -17,6 +18,7 @@ export default function Home() {
         <Placeholder />
         <About />
         <Services />
+        <Projects />
       </main>
     </>
   );
