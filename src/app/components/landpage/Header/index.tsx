@@ -36,7 +36,7 @@ export default function Header() {
                             <a href="#Static">Static</a>
                         </li>
                         <li>
-                            <a href="#">Project</a>
+                            <a href="#Projects">Project</a>
                         </li>
                         <li>
                             <a href="#">Contacts</a>
@@ -68,7 +68,7 @@ export default function Header() {
                             <a href="#Services">Services</a>
                         </li>
                         <li>
-                            <a href="#">Project</a>
+                            <a href="#Projects">Project</a>
                         </li>
                         <li>
                             <a href="#">Contacts</a>

@@ -17,7 +17,7 @@
     margin: 0 auto;
     flex-flow: column;
     border: 1px solid var(--foreground);
-    padding: 1rem 0 0 0;
+    padding: 2rem 0 0 0;
 }
 .static__title {
     flex-flow: column;
@@ -25,7 +25,7 @@
     text-align: center;
 }
 .static__title_h2 {
-    margin: 1rem 0 1rem 0;
+    margin: 0 0 1rem 0;
     font-size: clamp(2rem, 2vw + 0.5rem, 3rem);
     opacity: 0;
     transition: 1s ease-out;
