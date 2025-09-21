@@ -20,6 +20,9 @@
     width: var(--global-width);
     height: clamp(690px, 100vh, 980px);
     position: fixed;
+    transform: scale(var(--scroll-shrink));
+    transform-origin: top center;
+    transition: transform 100ms linear;
 }
 
 /* Left Sides */

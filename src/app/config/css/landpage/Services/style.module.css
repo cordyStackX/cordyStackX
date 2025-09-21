@@ -24,13 +24,17 @@
     padding: 2rem;
     text-align: center;
 }
-.static__title h2 {
+.static__title_h2 {
     margin: 1rem 0 1rem 0;
     font-size: clamp(2rem, 2vw + 0.5rem, 3rem);
+    opacity: 0;
+    transition: 1s ease-out;
 }
-.static__title p {
+.static__title_p {
     margin: 0 clamp(1rem, 1vw + 0.5rem, 3rem);
     font-size: clamp(0.9rem, 1vw + 0.5rem, 1.2rem);
+    opacity: 0;
+    transition: 1s ease-out;
 }
 .static__status {
     width: 100%;
@@ -46,6 +50,9 @@
     padding: 1rem;
     position: relative;
     overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
     background: transparent;
 }
 .static__stat div {
@@ -53,10 +60,17 @@
     height: 230px;
     filter: var(--image-invert_2);
 }
-.static__stat h3 {
+.static__stat span h3 {
     margin: 1rem 0;
     font-size: 1.5rem;
-    opacity: 0.8;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.static__stat span p {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .static__stat button {
     padding: clamp(0.6rem, 1vw + 0.4rem, 1rem);
@@ -85,4 +99,24 @@
 .static__stat:hover button {
     bottom: 0;
     opacity: 1;
+}
+
+/* InView Effects */
+.in_view, .in_view_title {
+  opacity: 1;
+  transform: translateY(0);
+}
+.in_view span h3,
+.in_view span p {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Optional: stagger via CSS variable */
+.static__stat {
+  transition-delay: var(--delay, 0s);
+}
+.static__stat span h3,
+.static__stat span p {
+  transition-delay: var(--delay, 0s);
 }

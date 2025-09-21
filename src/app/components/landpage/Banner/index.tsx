@@ -1,3 +1,4 @@
+import React from "react";
 import { Banner__css } from "@/app/config/css/landpage";
 import setting from "@/app/config/conf/setting.json";
 import image__src from "@/app/config/conf/images.json";
@@ -19,11 +20,7 @@ export default function Banner() {
     return(
         <section className={Banner__css.banner__sections}>
             <div className={Banner__css.banner__container} 
-            style={{
-                transform: `scale(${scrollShrink})`,
-                transformOrigin: "top center",
-                transition: "transform 100ms linear"
-            }}
+            style={{'--scroll-shrink' : `${scrollShrink}`} as React.CSSProperties}
             >
                 <div className={Banner__css.banner__left_side}>
                     <span className={Banner__css.banner__left_side_title}>

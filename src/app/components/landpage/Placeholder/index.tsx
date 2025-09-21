@@ -1,3 +1,4 @@
+import React from "react";
 import { Placeholder__css } from "@/app/config/css/landpage";
 import Image from "next/image";
 import image__src from "@/app/config/conf/images.json";
@@ -10,18 +11,8 @@ export default function Placeholder() {
     const image__width = 140, image__height = 70;
 
     return(
-        <section className={Placeholder__css.placeholder__section} 
-        style={{
-            boxShadow: `0rem -1.9rem 5rem ${UseScroll__shadow()}rem var(--shadows)`
-        }}
-        >
-            <div className={Placeholder__css.placeholder__container} ref={PHolder} 
-            style={{
-                opacity: PHolderIsInView ? 1 : 0,
-                transform: `scale(${PHolderIsInView ? "1" : "0.8"})`,
-                transition: "1s ease-in-out"
-            }}
-            >
+        <section className={Placeholder__css.placeholder__section} style={{'--scroll-shadow' : `${UseScroll__shadow()}rem`} as React.CSSProperties}>
+            <div className={`${Placeholder__css.placeholder__container} ${PHolderIsInView ? Placeholder__css.in_view : ''}`} ref={PHolder}>
                 <div className={Placeholder__css.placeholder__logos}>
                     <Image 
                     src={image__src.placeholder.image__1}

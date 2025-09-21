@@ -45,10 +45,10 @@
             "descriptions": "Version control and collaboration platform for managing code and CI/CD workflows."
         },
         "image__6": {
-            "name": "CI/CD",
-            "imageSource": "https://www.svgrepo.com/show/372275/ci-cd.svg",
+            "name": "Search Engine Optimizations",
+            "imageSource": "https://cdn-icons-png.flaticon.com/512/10701/10701004.png",
             "links": "https://github.com/features/actions",
-            "descriptions": "Automated pipelines to build, test, and deploy applications efficiently and reliably."
+            "descriptions": "Boost your online visibility with professional SEO services that drive traffic and rankings."
         },
         "image__7": {
             "name": "Next.js",

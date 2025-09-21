@@ -18,13 +18,8 @@ export default function About() {
         <div className={About__css.about__left_side}>
           <div>
             <span
-              className={About__css.about__left_side_image_1}
+              className={`${About__css.about__left_side_image_1} ${img1InView ? About__css.image_in_view : ''}`}
               ref={img1Ref}
-              style={{
-                transform: `translateX(${img1InView ? "0" : "-20px"})`,
-                opacity: img1InView ? "1" : "0",
-                transition: "0.7s ease-out",
-              }}
             >
               <Image
                 src={image__src.about.image__1}
@@ -37,13 +32,8 @@ export default function About() {
             </span>
 
             <span
-              className={About__css.about__left_side_image_2}
+              className={`${About__css.about__left_side_image_2} ${img2InView ? About__css.image_in_view : ''}`}
               ref={img2Ref}
-              style={{
-                transform: `translateX(${img2InView ? "0" : "20px"})`,
-                opacity: img2InView ? "1" : "0",
-                transition: "0.7s ease-out",
-              }}
             >
               <Image
                 src={image__src.about.image__2}
@@ -59,44 +49,16 @@ export default function About() {
 
         <div className={About__css.about__right_side}>
           <div className={About__css.about__right_side_info}>
-            <h2
-              ref={titleRef}
-              style={{
-                transform: `translateX(${titleInView ? "0" : "20px"})`,
-                opacity: titleInView ? "1" : "0",
-                transition: "0.8s ease",
-              }}
-            >
+            <h2 ref={titleRef} className={`${About__css.about__right_side_info_h2} ${titleInView ? About__css.text_in_view : ''}`}>
               ABOUT ME
             </h2>
 
-            <div
-              ref={lineRef}
-              style={{
-                width: lineInView ? "100%" : "0",
-                transition: "1s ease-out",
-              }}
-            />
-
-            <p
-            ref={para1}
-              style={{
-                transform: `translateX(${para1InView ? "0" : "-20px"})`,
-                opacity: para1InView ? "1" : "0",
-                transition: para1InView ? "0.8s ease-out" : "0s",
-              }}
-            >
+            <div ref={lineRef} className={`${About__css.about__right_side_info_div} ${lineInView ? About__css.elements_in_view : ''}`}/>
+            <p ref={para1} className={`${About__css.about__right_side_info_p} ${para1InView ? About__css.text_in_view : ''}`}>
               Founder of CordyStackX | Full Stack Web & Web3 Developer | Next.js Enthusiast | Building innovative blockchain &
               web applications with speed, scalability, and modern design.
             </p>
-            <p 
-            ref={para2}
-              style={{
-                transform: `translateX(${para2InView ? "0" : "-20px"})`,
-                opacity: para2InView ? "1" : "0",
-                transition: para2InView ? "0.8s ease-out 0.2s" : "0s",
-              }}
-            >
+            <p ref={para2} className={`${About__css.about__right_side_info_p} ${para2InView ? About__css.text_in_view : ''}`}>
               CordyStackX is my personal developer portfolio showcasing cutting-edge Full Stack Web and Web3 projects. Powered by
               Next.js, each project is optimized for performance, responsiveness, and SEO. I build innovative web solutions,
               explore blockchain applications, and share developer experiments that push the boundaries of modern web development.

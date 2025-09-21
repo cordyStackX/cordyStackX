@@ -9,12 +9,16 @@
 .placeholder__section {
     background-color: var(--background);
     position: relative;
+    box-shadow: 0rem -1.9rem 5rem var(--scroll-shadow) var(--shadows);
 }
 
 .placeholder__container {
     width: var(--global-width);
     height: auto;
     flex-flow: column;
+    transform: scale(0.8);
+    opacity: 0;
+    transition: 0.8s ease-in-out;
 }
 .placeholder__logos {
     overflow: auto;
@@ -27,4 +31,12 @@
 .placeholder__image {
     filter: var(--image-invert_2);
     margin: 0 2rem;
+}
+
+/* InView Effects */
+
+.in_view {
+    transform: scale(1);
+    opacity: 1;
+    transition: 0.8s ease-in-out;
 }

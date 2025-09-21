@@ -1,7 +1,7 @@
 "use client";
 import { UseEffect, UseRef, UseState } from "@/app/modules";
 
-export default function useInView<T extends HTMLElement>() {
+export default function useInView<T extends HTMLElement>(Observe = false) {
   const ref = UseRef<T | null>(null);
   const [isInView, setIsInView] = UseState(false);
 
@@ -13,10 +13,15 @@ export default function useInView<T extends HTMLElement>() {
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsInView(true);
-          observer.unobserve(entry.target);
+          if (Observe) {
+            observer.unobserve(entry.target);
+          }
+        }
+        else {
+          setIsInView(false)
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.4 }
     );
 
     observer.observe(element);

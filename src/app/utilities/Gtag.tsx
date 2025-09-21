@@ -1,5 +1,3 @@
-import Script from "next/script";
-
 // Declare dataLayer on the Window interface
 declare global {
   interface Window {
@@ -10,8 +8,8 @@ declare global {
 export default function Gtag() {
 return(
     <>
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y957KW3PF"></Script>
-        <Script
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1Y957KW3PF"></script>
+        <script
           id="gtag-init"
           dangerouslySetInnerHTML={{
             __html: `
