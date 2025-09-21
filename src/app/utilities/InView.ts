@@ -18,7 +18,7 @@ export default function useInView<T extends HTMLElement>(Observe = false) {
           }
         }
         else {
-          setIsInView(false)
+          setIsInView(false);
         }
       },
       { threshold: 0.4 }
