@@ -31,10 +31,13 @@
     width: 100%;
     height: auto;
     overflow: auto;
-    padding: 2rem;
+    justify-content: flex-start;
+    padding: 2rem 0.5rem;
 }
 .projects__stat {
     width: 340px;
+    margin: 0 0.5rem;
+    flex-shrink: 0;
     height: 650px;
     border: 2px solid var(--foreground);
 }

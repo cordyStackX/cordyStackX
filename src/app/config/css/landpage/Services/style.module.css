@@ -43,11 +43,11 @@
     overflow: hidden;
 }
 .static__stat {
-    flex: 1 1 340px;
+    flex: 1 1 400px;
     height: 470px;
     border: 1px solid var(--foreground);
     cursor: pointer;
-    padding: 1rem;
+    padding: 1.5rem;
     position: relative;
     overflow: hidden;
     opacity: 0;

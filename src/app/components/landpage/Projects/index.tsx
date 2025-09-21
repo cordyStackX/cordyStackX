@@ -11,6 +11,18 @@ export default function Projects() {
                 </div>
                 <div className={Projects__css.projects__status}>
                     <div className={Projects__css.projects__stat}>
+
+                    </div>
+                    <div className={Projects__css.projects__stat}>
+                        
+                    </div>
+                    <div className={Projects__css.projects__stat}>
+                        
+                    </div>
+                    <div className={Projects__css.projects__stat}>
+                        
+                    </div>
+                    <div className={Projects__css.projects__stat}>
                         
                     </div>
                 </div>

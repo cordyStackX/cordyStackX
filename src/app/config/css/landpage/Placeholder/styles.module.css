@@ -19,18 +19,30 @@
     transform: scale(0.8);
     opacity: 0;
     transition: 0.8s ease-in-out;
+    overflow: hidden;
 }
 .placeholder__logos {
-    overflow: auto;
-    width: 100%;
-    height: auto;
-    padding: 0.5rem 0;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden; /* hide scrollbar */
+    white-space: nowrap;
+    animation: scroll-left 30s linear infinite;
+    
 }
 
 .placeholder__image {
+    flex: 0 0 auto;
     filter: var(--image-invert_2);
     margin: 0 2rem;
+}
+
+@keyframes scroll-left {
+    from {
+        transform: translateX(20%);
+    }
+    to {
+        transform: translateX(-30%);
+    }
 }
 
 /* InView Effects */

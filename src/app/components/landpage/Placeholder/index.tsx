@@ -10,55 +10,37 @@ export default function Placeholder() {
 
     const image__width = 140, image__height = 70;
 
+    const loremIpsum = [
+        {image__source: image__src.placeholder.image__1},
+        {image__source: image__src.placeholder.image__2},
+        {image__source: image__src.placeholder.image__3},
+        {image__source: image__src.placeholder.image__4},
+        {image__source: image__src.placeholder.image__5},
+        {image__source: image__src.placeholder.image__1},
+        {image__source: image__src.placeholder.image__2},
+        {image__source: image__src.placeholder.image__3},
+        {image__source: image__src.placeholder.image__4},
+        {image__source: image__src.placeholder.image__5}
+    ];
+
     return(
         <section className={Placeholder__css.placeholder__section} style={{'--scroll-shadow' : `${UseScroll__shadow()}rem`} as React.CSSProperties}>
             <div className={`${Placeholder__css.placeholder__container} ${PHolderIsInView ? Placeholder__css.in_view : ''}`} ref={PHolder}>
                 <div className={Placeholder__css.placeholder__logos}>
-                    <Image 
-                    src={image__src.placeholder.image__1}
-                    alt="lorem image 1"
-                    title="lorem ipsum"
-                    width={image__width}
-                    height={image__height}
-                    priority={false}
-                    className={Placeholder__css.placeholder__image}
-                    />
-                    <Image 
-                    src={image__src.placeholder.image__2}
-                    alt="lorem image 2"
-                    title="lorem ipsum"
-                    width={image__width}
-                    height={image__height}
-                    priority={false}
-                    className={Placeholder__css.placeholder__image}
-                    />
-                    <Image 
-                    src={image__src.placeholder.image__3}
-                    alt="lorem image 3"
-                    title="lorem ipsum"
-                    width={image__width}
-                    height={image__height}
-                    priority={false}
-                    className={Placeholder__css.placeholder__image}
-                    />
-                    <Image 
-                    src={image__src.placeholder.image__4}
-                    alt="lorem image 4"
-                    title="lorem ipsum"
-                    width={image__width}
-                    height={image__height}
-                    priority={false}
-                    className={Placeholder__css.placeholder__image}
-                    />
-                    <Image 
-                    src={image__src.placeholder.image__5}
-                    alt="lorem image 5"
-                    title="lorem ipsum"
-                    width={image__width}
-                    height={image__height}
-                    priority={false}
-                    className={Placeholder__css.placeholder__image}
-                    />
+                    {[...loremIpsum, ...loremIpsum].map((src, idx) => (
+                        <Image 
+                        key={idx}
+                        src={src.image__source}
+                        alt={`lorem image ${idx + 1}`}
+                        title="lorem ipsum"
+                        width={image__width}
+                        height={image__height}
+                        priority={false}
+                        className={Placeholder__css.placeholder__image}
+                        />
+                    ))}
+                   
+                    
                 </div>
             </div>
         </section>
