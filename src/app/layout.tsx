@@ -1,5 +1,5 @@
 import React from "react";
-import { MetadataUtils, Json_LD, Cursor } from "./utilities";
+import { MetadataUtils, Json_LD, Cursor, Gtag } from "./utilities";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import {
@@ -19,8 +19,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
-
 export const metadata = MetadataUtils();
 
 export default function RootLayout({
@@ -35,6 +33,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(Json_LD()) }}
         />
+        <Gtag />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Cursor />
