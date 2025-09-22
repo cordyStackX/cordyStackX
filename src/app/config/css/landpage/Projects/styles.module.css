@@ -1,5 +1,5 @@
 .projects__title,
-.projects__status {
+.projects__stat {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,6 +10,7 @@
     position: relative;
     background-color: var(--background);
     overflow: hidden;
+    border-top: 1px solid var(--foreground);
 }
 .projects__container {
     width: var(--global-width);
@@ -28,16 +29,29 @@
 }
 
 .projects__status {
-    width: 100%;
-    height: auto;
-    overflow: auto;
-    justify-content: flex-start;
-    padding: 2rem 0.5rem;
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;         
+    height: 80vh;
+    padding: 0 calc(30% - 200px);
+    
 }
+
 .projects__stat {
-    width: 340px;
-    margin: 0 0.5rem;
-    flex-shrink: 0;
-    height: 650px;
+    flex: 0 0 100%;      
+    height: 90%;            
+    scroll-snap-align: center;
+    margin: 0 2rem;
     border: 2px solid var(--foreground);
+    cursor: pointer;
+    transform: scale(0.8);
+    transition: 0.5s ease;
+    pointer-events: none;
+}
+
+.projects__stat_grow {
+    transform: scale(1);
+    pointer-events: auto;
 }

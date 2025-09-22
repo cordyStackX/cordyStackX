@@ -1,7 +1,7 @@
 "use client";
 import { UseEffect, UseRef, UseState } from "@/app/modules";
 
-export default function useInView<T extends HTMLElement>(Observe = false) {
+export default function useInView<T extends HTMLElement>(Observe = false, threshold_val = 0.5) {
   const ref = UseRef<T | null>(null);
   const [isInView, setIsInView] = UseState(false);
 
@@ -21,7 +21,7 @@ export default function useInView<T extends HTMLElement>(Observe = false) {
           setIsInView(false);
         }
       },
-      { threshold: 0.4 }
+      { threshold: threshold_val }
     );
 
     observer.observe(element);
