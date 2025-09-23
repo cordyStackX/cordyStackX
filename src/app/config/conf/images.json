@@ -65,9 +65,6 @@
     },
     "logo" : {
         "image__1" : "/logo.svg"
-    },
-    "cover__photo" : {
-        "image__1" : "/CordyStack__cover.png"
     }
     
 }
