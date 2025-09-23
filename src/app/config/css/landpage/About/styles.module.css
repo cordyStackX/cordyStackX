@@ -105,7 +105,7 @@
     opacity: 0.7;
 }
 .about__right_side_info button:active {
-    transform: scale(0.8);
+    transform: scale(0.3);
 }
 
 @media (max-width: 700px) {

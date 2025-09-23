@@ -1,7 +1,10 @@
 .projects__title,
 .projects__stat,
-.projects__stat_image_title,
-.projects__stat_title {
+.projects__stat_imageContain,
+.projects__stat_title,
+.projects__stat_title_buttons,
+.projects__stat_title_buttons span,
+.projects__stat_navigators {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,6 +27,7 @@
 .projects__title {
     flex-flow: column;
     padding: 2rem;
+    text-align: center;
 }
 .projects__title h2 {
     font-size: clamp(2rem, 2vw + 0.5rem, 3rem);
@@ -37,7 +41,7 @@
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     width: 100%;         
-    height: 70vh;
+    height: 700px;
     padding: 0 calc(50% - 400px);
 }
 
@@ -48,13 +52,13 @@
     border-top: 2px solid var(--foreground);
     border-left: 2px solid var(--foreground);
     border-right: 2px solid var(--foreground);
-    /* border-radius: 15px; */
-    cursor: pointer;
     transform: translateY(100px) scale(0.8);
     opacity: 0.1;
     transition: 0.5s ease; 
     pointer-events: none;
     flex-flow: column;
+    align-items: flex-start;
+    justify-content: flex-start;
     overflow: hidden;
 }
 
@@ -63,27 +67,76 @@
     pointer-events: auto;
     opacity: 1;
 }
-
-.projects__stat_image_title {
+.projects__stat_imageContain {
     width: 100%;
-    height: 50%;
-    gap: 10px;
-    flex-wrap: wrap;
+    height: 45%;
+    position: relative;
+    overflow: hidden;
 }
 .projects__stat_image {
-    flex: 1 1 30%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    border-top: 1px solid var(--foreground);
+    border-right: 1px solid var(--foreground); 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    backdrop-filter: blur(20px);
+    z-index: 1;
+}
+.projects__stat_image__cover {
+    width: 100%;
+    height: 400px;
     position: relative;
-    
 }
-.projects__stat_image_line {
-    border: 1px solid var(--foreground);
+.projects__stat_title_buttons {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid var(--foreground);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem clamp(1rem, 1vw + 0.5rem, 2rem);
 }
-.projects__stat_title {
-    flex: 1 1 30%;
+.projects__stat_title_buttons h2 {
+    font-size: clamp(1.2rem, 1vw + 0.5rem, 2rem);
+}
+.projects__stat_title_buttons span button {
+    padding: clamp(0.8rem, 1vw + 0.5rem, 1rem);
+    margin: 0 clamp(0.1rem, 1vw + 0.1rem, 1rem);
+    cursor: pointer;
+    background-color: var(--foreground);
+    color: var(--background);
+    font-weight: bold;
+    border: none;
+    transition: 0.5s ease-in;
+    font-size: clamp(0.6rem, 1vw + 0.5rem, 1rem);
+}
+.projects__stat_title_buttons span button:hover {
+    opacity: 0.7;
+}
+.projects__stat_title_buttons span button:active {
+    transform: scale(0.3);
 }
 .projects__stat__info {
     width: 100%;
-    height: 50%;
-    border-top: 1px solid var(--foreground);
+    height: 30%;
+    padding: 1rem clamp(1rem, 1vw + 0.5rem, 2rem);
+    font-size: clamp(0.9rem, 1vw + 0.5rem, 1.2rem);
+}
+.projects__stat_navigators {
+    width: 100%;
+    height: 10%;
+    justify-content: space-between;
+    padding: 0 clamp(1rem, 1vw + 0.5rem, 2rem);
+}
+.projects__stat_navigators button {
+    padding: clamp(0.8rem, 1vw + 0.5rem, 1rem);
+    margin: 0 clamp(0.1rem, 1vw + 0.1rem, 1rem);
+    cursor: pointer;
+    color: var(--foreground);
+    background: transparent;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s ease-in;
+    font-size: clamp(0.6rem, 1vw + 0.5rem, 1rem);
 }
