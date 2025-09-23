@@ -1,7 +1,7 @@
 "use client";
 import { UseEffect, UseRef, UseState } from "@/app/modules";
 
-export default function useInView<T extends HTMLElement>(Observe = false, threshold_val = 0.5) {
+export default function useInView<T extends HTMLElement>(Observe = false, threshold_val = 0.4) {
   const ref = UseRef<T | null>(null);
   const [isInView, setIsInView] = UseState(false);
 

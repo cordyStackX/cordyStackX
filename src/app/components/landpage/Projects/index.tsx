@@ -1,4 +1,6 @@
 import { Projects__css } from "@/app/config/css/landpage";
+import image__src from "@/app/config/conf/images.json";
+import Image from "next/image";
 import { useInView } from "@/app/utilities";
 
 export default function Projects() {
@@ -20,7 +22,22 @@ export default function Projects() {
                 </div>
                 <div className={Projects__css.projects__status}>
                     <div ref={grow1} className={`${Projects__css.projects__stat} ${growIsInView1 ? Projects__css.projects__stat_grow : ''}`}>
-                        Card 1
+                        <div className={Projects__css.projects__stat_image_title}>
+                            <div className={Projects__css.projects__stat_image}>
+                                <Image
+                                src={image__src.services.image__1.imageSource}
+                                alt="Sample"
+                                title="Samples"
+                                width={200}
+                                height={200}
+                                unoptimized
+                                className={Projects__css.projects__stat_image_line}
+                                />
+                            </div>
+                        </div>
+                        <div className={Projects__css.projects__stat__info}>
+
+                        </div>
                     </div>
                     <div ref={grow2} className={`${Projects__css.projects__stat} ${growIsInView2 ? Projects__css.projects__stat_grow : ''}`}>
                         Card 2

@@ -16,7 +16,7 @@
     width: var(--global-width);
     height: auto;
     flex-flow: column;
-    transform: scale(0.8);
+    transform: scale(0.9);
     opacity: 0;
     transition: 0.8s ease-in-out;
     overflow: hidden;
