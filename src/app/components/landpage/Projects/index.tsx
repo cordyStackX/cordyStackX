@@ -92,8 +92,8 @@ export default function Projects() {
                                 <div className={Projects__css.projects__stat_title_buttons}>
                                     <h2> {stat.title} </h2>
                                     <span>
-                                        <button> <Link href={stat.visit}>Visit</Link> </button>
-                                        <button> <Link href={stat.repo}>Open {'>>'}</Link> </button>
+                                        <Link href={stat.visit}><button> Visit </button></Link>
+                                        <Link href={stat.repo}><button> Open {'>>'}</button></Link> 
                                     </span>
                                     
                                 </div>
