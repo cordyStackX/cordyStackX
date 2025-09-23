@@ -1,6 +1,6 @@
 {
     "cordy__connect" : {
-        "repo" : "https://github.com/cordyStackX/cordyStackX.git",
+        "repo" : "https://github.com/cordyStackX/cordyStackX/tree/main/src/app/services/wagmi",
         "visit" : "https://cordy-stack-x.vercel.app/",
         "profile" : "/logo.svg",
         "cover__photo" : "/CordyStack__cover.png",
