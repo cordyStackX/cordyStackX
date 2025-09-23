@@ -1,7 +1,7 @@
 import React from "react";
 import { MetadataUtils, Json_LD, Cursor, Gtag } from "./utilities";
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 
 import {
     ProvidersClientWrapper
