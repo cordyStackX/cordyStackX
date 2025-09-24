@@ -11,11 +11,14 @@ import Services__css from "./Services/style.module.css";
 
 import Projects__css from "./Projects/styles.module.css";
 
+import Footer__css from "./Footer/styles.module.css";
+
 export { 
     Header__css, 
     Banner__css, 
     Placeholder__css,
     About__css,
     Services__css,
-    Projects__css
+    Projects__css,
+    Footer__css
 };
