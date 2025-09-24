@@ -20,7 +20,7 @@
         "visit" : "https://color-game-plum.vercel.app/",
         "profile" : "/color_game.webp",
         "cover__photo" : "/color_game_ingame.png",
-        "title" : "Color Game Mini Web",
+        "title" : "Color Game",
         "descriptions" : "This project is a fun, interactive color game built with Next.js and TypeScript. Play, bet, and win by choosing color combinations and spinning for rewards! The app also integrates with crypto wallets for token-based betting and rewards."
     }
 }

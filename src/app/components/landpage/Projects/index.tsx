@@ -71,8 +71,8 @@ export default function Projects() {
                                     <div className={Projects__css.projects__stat_image}>
                                         <Image
                                         src={stat.profile}
-                                        alt="Sample"
-                                        title="Samples"
+                                        alt={stat.title}
+                                        title={stat.title}
                                         width={170}
                                         height={170}
                                         unoptimized
@@ -81,8 +81,8 @@ export default function Projects() {
                                     <div className={Projects__css.projects__stat_image__cover}>
                                     <Image
                                         src={stat.cover}
-                                        alt="Cover"
-                                        title="Cover"
+                                        alt={stat.title}
+                                        title={stat.title}
                                         fill
                                         unoptimized
                                         />

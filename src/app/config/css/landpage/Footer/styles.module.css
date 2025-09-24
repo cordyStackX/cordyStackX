@@ -1,0 +1,20 @@
+.contacts__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts__footer {
+    width: 100dvw;
+    height: var(--height);
+    background: var(--background);
+    position: absolute;
+    bottom: 0;
+    transition: 0.5s ease-in-out;
+    box-shadow: var(--footer-shadows);
+    overflow: hidden;
+}
+.contacts__container {
+    width: var(--global-width);
+    height: 100%;
+    margin: 0 auto;
+}

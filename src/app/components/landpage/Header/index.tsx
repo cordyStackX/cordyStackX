@@ -39,7 +39,7 @@ export default function Header() {
                             <a href="#Projects">Project</a>
                         </li>
                         <li>
-                            <a href="#">Contacts</a>
+                            <a href="#contacts">Contacts</a>
                         </li>
                         <li style={{margin: "20px 0"}}>
                              <a href="#" className={Header__css.hamburger__logo__links}>
@@ -71,7 +71,7 @@ export default function Header() {
                             <a href="#Projects">Project</a>
                         </li>
                         <li>
-                            <a href="#">Contacts</a>
+                            <a href="#contacts">Contacts</a>
                         </li>
                     </ul>
                 </nav>
