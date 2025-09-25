@@ -25,6 +25,7 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     padding: 1rem;
+    gap: 10px;
 }
 .contacts__info,
 .contacts__src {
@@ -32,7 +33,7 @@
     flex-flow: column;
     justify-content: flex-start;
     align-items: flex-start;
-    flex: 1 1 50%;
+    flex: 1 1 40%;
 }
 .contacts__info h3,
 .contacts__src h3,

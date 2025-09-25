@@ -18,7 +18,7 @@ export default function Footer() {
 
     return(
         <footer id="contacts" className={Footer__css.contacts__footer} ref={footer} 
-        style={{'--height': footerIsInView ? 'min(600px, 100vh)' : '0', '--footer-shadows': footerIsInView ? '0 -10vh 30vh 90vh var(--background)' : '0 0 2rem 1rem var(--background)'} as React.CSSProperties}>
+        style={{'--height': footerIsInView ? 'min(600px, 100vh)' : '10vh', '--footer-shadows': footerIsInView ? '0 -10vh 30vh 90vh var(--background)' : '0 0 2rem 1rem var(--background)'} as React.CSSProperties}>
             <div className={Footer__css.contacts__container}>
                 <div ref={show_info} className={Footer__css.contacts__info} style={{'--show-info': show_infoIsInView ? 1 : 0} as React.CSSProperties}>
                     <h3>Social Media</h3>

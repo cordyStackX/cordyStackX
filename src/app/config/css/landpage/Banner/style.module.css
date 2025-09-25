@@ -32,6 +32,7 @@
     flex-flow: column;
     align-items: flex-start;
     position: relative;
+    padding: clamp(0.2rem, 2vw + 0.3rem, 2rem);
 }
 .banner__left_side_title, 
 .banner__left_side_links {
@@ -86,7 +87,7 @@
     filter: var(--image-grayScale);
     transition: 100ms ease-in-out;
     clip-path: polygon(
-        80% 0,   /* top */
+        90% 0,   /* top */
         100% 0,  /* right */
         100% 100%,  /* bottom */
         0 100%    /* left */
