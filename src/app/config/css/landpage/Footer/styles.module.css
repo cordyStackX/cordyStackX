@@ -1,4 +1,8 @@
-.contacts__container {
+.contacts__container,
+.contacts__info,
+.contacts__src,
+.contacts__info a,
+.contacts__src a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,6 +19,22 @@
 }
 .contacts__container {
     width: var(--global-width);
-    height: 100%;
+    height: auto;
     margin: 0 auto;
+    align-items: flex-start;
+}
+.contacts__info,
+.contacts__src {
+    width: 50%;
+    height: 100%;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.contacts__container h3 {
+    margin: 1rem 0;
+}
+.contacts__info a p,
+.contacts__src a p  {
+    padding: 1rem;
 }
