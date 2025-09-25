@@ -24,12 +24,29 @@ export default function Services() {
             <div className={Services__css.static__container}>
                 <div className={Services__css.static__title}>
                     <span>
-                        <h2 ref={title} className={`${Services__css.static__title_h2} ${titleIsInView ? Services__css.in_view_title : ''}`}>
-                        Services
+                        <h2 ref={title} style={{'--titleIsInView': titleIsInView ? 1 : 0} as React.CSSProperties}>
+                        <span>S</span>
+                        <span>e</span>
+                        <span>v</span>
+                        <span>i</span>
+                        <span>c</span>
+                        <span>e</span>
+                        <span>s</span>
                         </h2>
-                        <p ref={para1} className={`${Services__css.static__title_p} ${para1IsInView ? Services__css.in_view_title : ''}`}>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br />
-                        Quidem error excepturi perspiciatis perferendis
+                        <p ref={para1} style={{'--para1IsInView': para1IsInView ? 1 : 0} as React.CSSProperties}>
+                        <span>I</span>
+                        <span>provide</span>
+                        <span>modern</span>
+                        <span>web</span>
+                        <span>development</span>
+                        <span>services,</span>
+                        <span>from</span>
+                        <span>responsive</span>
+                        <span>websites</span>
+                        <span>to</span>
+                        <span>full-stack</span>
+                        <span>Web3</span>
+                        <span>applications.</span>
                         </p>
                     </span>
                 </div>

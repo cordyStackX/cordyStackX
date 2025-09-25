@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import { About__css } from "@/app/config/css/landpage";
 import image__src from "@/app/config/conf/images.json";
@@ -49,8 +50,14 @@ export default function About() {
 
         <div className={About__css.about__right_side}>
           <div className={About__css.about__right_side_info}>
-            <h2 ref={titleRef} className={`${About__css.about__right_side_info_h2} ${titleInView ? About__css.text_in_view : ''}`}>
-              ABOUT ME
+            <h2 ref={titleRef} style={{'--titleIsInView': titleInView ? 1 : 0} as React.CSSProperties}>
+              <span>A</span>
+              <span>B</span>
+              <span>O</span>
+              <span>U</span>
+              <span>T</span>
+              <span>M</span>
+              <span>E</span>
             </h2>
 
             <div ref={lineRef} className={`${About__css.about__right_side_info_div} ${lineInView ? About__css.elements_in_view : ''}`}/>

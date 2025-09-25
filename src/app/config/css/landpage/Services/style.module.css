@@ -24,18 +24,63 @@
     padding: 2rem;
     text-align: center;
 }
-.static__title_h2 {
+.static__title h2 {
     margin: 0 0 1rem 0;
     font-size: clamp(2rem, 2vw + 0.5rem, 3rem);
-    opacity: 0;
-    transition: 1s ease-out;
+    opacity: var(--titleIsInView);
+    transition: 1s ease-in;
 }
-.static__title_p {
+.static__title h2 span {
+    opacity: 0;
+    transform: translateY(20px);
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+.static__title h2[style*="--titleIsInView: 1"] span {
+    opacity: 1;
+    transform: translateY(0);
+}
+.static__title h2 span:nth-child(1) { transition-delay: 0s; }
+.static__title h2 span:nth-child(2) { transition-delay: 0.1s; }
+.static__title h2 span:nth-child(3) { transition-delay: 0.2s; }
+.static__title h2 span:nth-child(4) { transition-delay: 0.3s; }
+.static__title h2 span:nth-child(5) { transition-delay: 0.4s; }
+.static__title h2 span:nth-child(6) { transition-delay: 0.5s; }
+.static__title h2 span:nth-child(7) { transition-delay: 0.6s; }
+
+
+.static__title p {
     margin: 0 clamp(1rem, 1vw + 0.5rem, 3rem);
     font-size: clamp(0.9rem, 1vw + 0.5rem, 1.2rem);
-    opacity: 0;
-    transition: 1s ease-out;
+    opacity: var(--para1IsInView);
 }
+
+.static__title p span {
+    opacity: 0;
+    transform: translateY(20px);
+    margin: 0 0.2rem;
+    display: inline-block;
+    transition: all 0.4s ease;
+}
+.static__title p[style*="--para1IsInView: 1"] span {
+    opacity: 1;
+    transform: translateY(0);
+}
+.static__title p span:nth-child(1) { transition-delay: 0s; }
+.static__title p span:nth-child(2) { transition-delay: 0.1s; }
+.static__title p span:nth-child(3) { transition-delay: 0.2s; }
+.static__title p span:nth-child(4) { transition-delay: 0.3s; }
+.static__title p span:nth-child(5) { transition-delay: 0.4s; }
+.static__title p span:nth-child(6) { transition-delay: 0.5s; }
+.static__title p span:nth-child(7) { transition-delay: 0.6s; }
+.static__title p span:nth-child(8) { transition-delay: 0.7s; }
+.static__title p span:nth-child(9) { transition-delay: 0.8s; }
+.static__title p span:nth-child(10) { transition-delay: 0.9s; }
+.static__title p span:nth-child(11) { transition-delay: 1s; }
+.static__title p span:nth-child(12) { transition-delay: 1.1s; }
+.static__title p span:nth-child(13) { transition-delay: 1.2s; }
+
+
 .static__status {
     width: 100%;
     justify-content: flex-start;
@@ -104,12 +149,7 @@
 }
 
 /* InView Effects */
-.in_view, .in_view_title {
-  opacity: 1;
-  transform: translateX(0);
-}
-.in_view span h3,
-.in_view span p {
+.in_view, .in_view span p {
   opacity: 1;
   transform: translateX(0);
 }

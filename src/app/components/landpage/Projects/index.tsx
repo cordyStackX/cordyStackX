@@ -1,3 +1,4 @@
+import React from "react";
 import { Projects__css } from "@/app/config/css/landpage";
 import project__src from "@/app/config/conf/project__links.json";
 import Image from "next/image";
@@ -54,12 +55,34 @@ export default function Projects() {
         }
     };
 
+    const { ref: title, isInView: titleIsInView } = useInView<HTMLDivElement>();
+    const { ref: para1, isInView: para1IsInView } = useInView<HTMLDivElement>();
+
     return(
         <section id="Projects" className={Projects__css.projects__sections}>
             <div className={Projects__css.projects__container}>
                 <div className={Projects__css.projects__title}>
-                    <h2>Projects</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia vel, error sequi similique mollitia</p>
+                    <h2 ref={title} style={{'--titleIsInView': titleIsInView ? 1 : 0} as React.CSSProperties}>
+                        <span>P</span>
+                        <span>r</span>
+                        <span>o</span>
+                        <span>j</span>
+                        <span>e</span>
+                        <span>c</span>
+                        <span>t</span>
+                        <span>s</span>
+                    </h2>
+                    <p ref={para1} style={{'--paraIsInView': para1IsInView ? 1 : 0} as React.CSSProperties}>
+                        <span>Projects</span>
+                        <span>built</span>
+                        <span>from</span>
+                        <span>curiosity,</span>
+                        <span>late-night</span>
+                        <span>coding</span>
+                        <span>and</span>
+                        <span>breaking</span>
+                        <span>limits.</span>
+                    </p>
                 </div>
                 <div className={Projects__css.projects__status} ref={scrollRef}>
                     {projectArrays.map((stat) => {
