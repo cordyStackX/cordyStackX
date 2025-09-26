@@ -10,23 +10,34 @@ import {
     UseScroll__formula
 } from "@/app/modules";
 import Cube from "./fx_effects";
+import { useInView } from "@/app/utilities";
 
 
 export default function Banner() {
 
     const scrollShrink = UseScroll__formula();
+    const { ref: title, isInView: titleIsInView } = useInView<HTMLDivElement>(true);
+    const { ref: links, isInView: linksIsInView } = useInView<HTMLDivElement>(true);
 
     return(
         <section className={Banner__css.banner__sections}>
             <div className={Banner__css.banner__container} 
             style={{'--scroll-shrink' : `${scrollShrink}`} as React.CSSProperties}
             >
-                <div className={Banner__css.banner__left_side}>
-                    <span className={Banner__css.banner__left_side_title}>
-                        <h1>Full Stack Web/Web3 Developer CordyStackX</h1>
+                <div className={Banner__css.banner__left_side} style={{'--fade-in': titleIsInView ? 1 : 0} as React.CSSProperties} >
+                    <div className={Banner__css.banner__left_side_title} >
+                        <h1 ref={title} style={{'--load-appear': titleIsInView ? 1 : 0} as React.CSSProperties}>
+                            <span>Full</span>
+                            <span>Stack</span>
+                            <span>Web</span>
+                            <span>/</span>
+                            <span>Web3</span>
+                            <span>Developer</span>
+                            <span>CordyStackX</span>
+                        </h1>
                         <h4>Portfolio</h4>
-                    </span>
-                    <span className={Banner__css.banner__left_side_links}>
+                    </div>
+                    <div className={Banner__css.banner__left_side_links} ref={links} style={{'--load-links': linksIsInView ? 1 : 0} as React.CSSProperties}>
                         <h2>Featured Web3 Projects </h2>
                         <a href={setting.links__src.Social__links.linked_in} target="_blank" rel="noopener noreferrer">
                             <FaLinkedin size={30}/>
@@ -43,11 +54,10 @@ export default function Banner() {
                         <a href={setting.links__src.Social__links.tiktok} target="_blank" rel="noopener noreferrer">
                             <FaTiktok size={30}/>
                         </a>
-                    </span>
-                    <p>Full Stack Web & Web3 Developer building scalable, 
-                        user-friendly applications. Experienced in both Web2 
-                        and decentralized technologies, with a passion for hackathons 
-                        (e.g., DoraHacks) and delivering innovative solutions.
+                    </div>
+                    <p>Full Stack Web & Web3 Developer specializing in scalable apps with 
+                        Next.js, Express, and PostgreSQL. Experienced in smart contracts 
+                        (Hardhat, Wagmi) and SEO-driven growth strategies.
                     </p>
                     <div className={Banner__css.banner__left_side_buttons}>
                         <span></span>

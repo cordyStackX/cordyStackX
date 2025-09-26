@@ -50,7 +50,7 @@ export default function About() {
 
         <div className={About__css.about__right_side}>
           <div className={About__css.about__right_side_info}>
-            <h2 ref={titleRef} style={{'--titleIsInView': titleInView ? 1 : 0} as React.CSSProperties}>
+            <h2 ref={titleRef} style={{ '--titleIsInView': titleInView ? 1 : 0 } as React.CSSProperties}>
               <span>A</span>
               <span>B</span>
               <span>O</span>
@@ -60,20 +60,23 @@ export default function About() {
               <span>E</span>
             </h2>
 
-            <div ref={lineRef} className={`${About__css.about__right_side_info_div} ${lineInView ? About__css.elements_in_view : ''}`}/>
+            <div ref={lineRef} className={`${About__css.about__right_side_info_div} ${lineInView ? About__css.elements_in_view : ''}`} />
             <p ref={para1} className={`${About__css.about__right_side_info_p} ${para1InView ? About__css.text_in_view : ''}`}>
               Founder of CordyStackX | Full Stack Web & Web3 Developer | Next.js Enthusiast | Building innovative blockchain &
               web applications with speed, scalability, and modern design.
             </p>
             <p ref={para2} className={`${About__css.about__right_side_info_p} ${para2InView ? About__css.text_in_view : ''}`}>
-              CordyStackX is my personal developer portfolio showcasing cutting-edge Full Stack Web and Web3 projects. Powered by
-              Next.js, each project is optimized for performance, responsiveness, and SEO. I build innovative web solutions,
-              explore blockchain applications, and share developer experiments that push the boundaries of modern web development.
+              I aim to build the next wave of scalable Web2 and Web3 applications —
+              blending modern frameworks like Next.js and Express with decentralized tools like Hardhat
+              and Wagmi. My vision is to create seamless, user-friendly digital experiences while
+              optimizing visibility through SEO. Long-term, I&#39;m working towards becoming a validator and founder, driving
+              innovation in blockchain-powered platforms that empower users and developers alike.
             </p>
             <button>Ask my Resume</button>
           </div>
         </div>
       </div>
+
     </section>
   );
 }

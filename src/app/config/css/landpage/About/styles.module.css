@@ -1,11 +1,12 @@
 .about__sections,
 .about__container,
-.about__left_side, 
+.about__left_side,
 .about__right_side {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .about__sections {
     background-color: var(--background);
     position: relative;
@@ -26,43 +27,56 @@
     overflow: hidden;
     z-index: 0;
 }
-.about__left_side_image_1, .about__left_side_image_2 {
+
+.about__left_side_image_1,
+.about__left_side_image_2 {
     position: absolute;
     filter: var(--image-grayScale);
     transition: 0.7s ease-out;
 }
+
 .about__left_side_image_1 {
     transform: translate(-20px);
     opacity: 0;
 }
+
 .about__left_side_image_2 {
     transform: translate(20px);
     opacity: 0;
 }
+
 .about__left_side_image_1 {
     top: 70px;
     left: 10px;
     right: 10px;
-    clip-path: polygon(
-        100% 0,   /* top */
-        0% 30%,  /* right */
-        0 80%,  /* bottom */
-        100% 40%    /* left */
-    );
-    overflow: hidden;   
+    clip-path: polygon(100% 0,
+            /* top */
+            0% 30%,
+            /* right */
+            0 80%,
+            /* bottom */
+            100% 40%
+            /* left */
+        );
+    overflow: hidden;
 }
+
 .about__left_side_image_2 {
     bottom: 70px;
     left: 10px;
     right: 10px;
-    clip-path: polygon(
-        100% 0,   /* top */
-        0 55%,  /* right */
-        0% 100%,  /* bottom */
-        100% 50%    /* left */
-    );
-    overflow: hidden; 
+    clip-path: polygon(100% 0,
+            /* top */
+            0 55%,
+            /* right */
+            0% 100%,
+            /* bottom */
+            100% 50%
+            /* left */
+        );
+    overflow: hidden;
 }
+
 /* Right Side */
 .about__right_side {
     width: min(600px, 90%);
@@ -70,11 +84,13 @@
     justify-content: flex-start;
     margin: 0 2rem;
 }
+
 .about__right_side_info h2 {
     font-size: clamp(1.2rem, 2vw + 0.2rem, 2rem);
     opacity: var(--titleIsInView);
     transition: 0.8s ease-out;
 }
+
 .about__right_side_info h2 span {
     opacity: 0;
     transform: translateX(20px);
@@ -82,17 +98,39 @@
     transition: all 0.4s ease;
     margin: 0 0.5rem;
 }
+
 .about__right_side_info h2[style*='--titleIsInView: 1'] span {
     opacity: 1;
     transform: translateX(0);
 }
-.about__right_side_info h2 span:nth-child(1) { transition-delay: 0s; }
-.about__right_side_info h2 span:nth-child(2) { transition-delay: 0.1s; }
-.about__right_side_info h2 span:nth-child(3) { transition-delay: 0.2s; }
-.about__right_side_info h2 span:nth-child(4) { transition-delay: 0.3s; }
-.about__right_side_info h2 span:nth-child(5) { transition-delay: 0.4s; }
-.about__right_side_info h2 span:nth-child(6) { transition-delay: 0.5s; }
-.about__right_side_info h2 span:nth-child(7) { transition-delay: 0.6s; }
+
+.about__right_side_info h2 span:nth-child(1) {
+    transition-delay: 0s;
+}
+
+.about__right_side_info h2 span:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+.about__right_side_info h2 span:nth-child(3) {
+    transition-delay: 0.2s;
+}
+
+.about__right_side_info h2 span:nth-child(4) {
+    transition-delay: 0.3s;
+}
+
+.about__right_side_info h2 span:nth-child(5) {
+    transition-delay: 0.4s;
+}
+
+.about__right_side_info h2 span:nth-child(6) {
+    transition-delay: 0.5s;
+}
+
+.about__right_side_info h2 span:nth-child(7) {
+    transition-delay: 0.6s;
+}
 
 .about__right_side_info_p {
     font-size: clamp(0.9rem, 1vw + 0.5rem, 1.2rem);
@@ -101,6 +139,7 @@
     transform: translateX(-20px);
     transition: 0.8s ease-out;
 }
+
 .about__right_side_info_div {
     width: 0%;
     height: 2px;
@@ -109,6 +148,7 @@
     margin-bottom: 1rem;
     transition: 1s ease-in-out;
 }
+
 .about__right_side_info button {
     padding: clamp(0.6rem, 1vw + 0.4rem, 1rem);
     margin: clamp(0.6rem, 1vw + 0.4rem, 1rem) 0;
@@ -119,9 +159,11 @@
     border: none;
     transition: 0.5s ease-in;
 }
+
 .about__right_side_info button:hover {
     opacity: 0.7;
 }
+
 .about__right_side_info button:active {
     transform: scale(0.3);
 }
@@ -130,6 +172,7 @@
     .about__container {
         height: 1000px;
     }
+
     .about__right_side {
         position: absolute;
         width: 100%;
@@ -138,13 +181,16 @@
         padding: 1rem;
         box-shadow: 0rem 0rem 3rem 3.2rem var(--background);
     }
+
     .about__left_side {
         height: inherit;
     }
+
     .about__left_side_image_1 {
         top: 20px;
 
     }
+
     .about__left_side_image_2 {
         bottom: 20px;
     }
@@ -156,11 +202,13 @@
     opacity: 1;
     transition: 0.7s ease-out;
 }
+
 .text_in_view {
     transform: translateX(0);
     opacity: 1;
     transition: 0.8s ease-out;
 }
+
 .elements_in_view {
     width: 100%;
     transition: 1s ease-in-out;

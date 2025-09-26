@@ -1,0 +1,208 @@
+.scene,
+.cube,
+.nav_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FX Effects */
+.scene {
+    width: 600px;
+    height: 600px;
+    perspective: 600px;
+    position: absolute;
+    z-index: -1;
+    right: -1dvw;
+    transform: scale(1) rotate(var(--scroll-degree)) translateY(0);
+    pointer-events: none;
+    opacity: var(--load-appear);
+    transition: 100ms linear;
+}
+.border__circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--foreground);
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(var(--load-appear));
+    transition: all 0.8s ease;
+    transition-delay: 0.5s;
+}
+.border__circle2 {
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    border: 2px solid var(--foreground);
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(var(--load-appear));
+    transition: all 0.8s ease;
+    transition-delay: 0s;
+}
+.cube {
+    width: 20%;
+    height: 20%;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transform: rotateX(-20deg) rotateY(20deg);
+    animation: spin 20s infinite linear;
+}
+
+.nav1_circle {
+    width: 20%;
+    height: 20%;
+    border: 1px solid var(--foreground);
+    position: absolute;
+    border-radius: 50%;
+    top: -8%;
+    background-color: var(--background);
+
+}
+.nav2_circle {
+    width: 20%;
+    height: 20%;
+    border: 1px solid var(--foreground);
+    position: absolute;
+    border-radius: 50%;
+    bottom: -8%;
+    background-color: var(--background);
+}
+
+.nav3_circle {
+    width: 20%;
+    height: 20%;
+    border: 1px solid var(--foreground);
+    position: absolute;
+    border-radius: 50%;
+    left: -8%;
+    background-color: var(--background);
+}
+.nav4_circle {
+    width: 20%;
+    height: 20%;
+    border: 1px solid var(--foreground);
+    position: absolute;
+    border-radius: 50%;
+    right: -8%;
+    background-color: var(--background);
+}
+
+.scene .nav1_circle,
+.scene .nav2_circle,
+.scene .nav3_circle,
+.scene .nav4_circle {
+    transform: scale(0);
+    transition: all 0.8s ease;
+}
+.scene[style*='--load-appear: 1'] .nav1_circle,
+.scene[style*='--load-appear: 1'] .nav2_circle,
+.scene[style*='--load-appear: 1'] .nav3_circle,
+.scene[style*='--load-appear: 1'] .nav4_circle {
+    transform: scale(1);
+}
+
+.scene .nav1_circle { transition-delay: 0.6s; }
+.scene .nav3_circle { transition-delay: 0.7s; }
+.scene .nav2_circle { transition-delay: 0.8s; }
+.scene .nav4_circle { transition-delay: 0.9s; }
+
+.face {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--foreground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--foreground);
+}
+
+/* Faces placement */
+.front {
+    transform: rotateY(0deg) translateZ(0px) scale(0);
+    background: rgba(0, 255, 255, 0.7);
+    border-color: rgba(0, 255, 255, 0.7);
+    box-shadow: 0 0 50px rgba(0, 255, 255, 0.5);
+    transition: all 0.8s ease;
+}
+.scene[style*='--load-appear: 1'] .front {
+    transform: rotateY(0deg) translateZ(80px) scale(1);
+}
+.back {
+    transform: rotateY(180deg) translateZ(0px) scale(0);
+    background: rgba(138, 43, 226, 0.7);
+    border-color: rgba(138, 43, 226, 0.7);
+    box-shadow: 0 0 50px rgba(138, 43, 226, 0.5);
+    transition: all 0.8s ease;
+}
+.scene[style*='--load-appear: 1'] .back {
+    transform: rotateY(180deg) translateZ(80px) scale(1);
+}
+.right {
+    transform: rotateY(90deg) translateZ(0px) scale(0);
+    background: rgba(0, 255, 127, 0.7);
+    border-color: rgba(0, 255, 127, 0.7);
+    box-shadow: 0 0 50px rgba(0, 255, 127, 0.5);
+    transition: all 0.8s ease;
+}
+.scene[style*='--load-appear: 1'] .right {
+    transform: rotateY(90deg) translateZ(80px) scale(1);
+}
+.left {
+    transform: rotateY(-90deg) translateZ(0px) scale(0);
+    background: rgba(255, 215, 0, 0.7);
+    border-color: rgba(255, 215, 0, 0.7);
+    box-shadow: 0 0 50px rgba(255, 215, 0, 0.5);
+    transition: all 0.8s ease;
+}
+.scene[style*='--load-appear: 1'] .left {
+    transform: rotateY(-90deg) translateZ(80px) scale(1);
+}
+.top {
+    transform: rotateX(90deg) translateZ(0px) scale(0);
+    background: rgba(0, 128, 255, 0.7);
+    border-color: rgba(0, 128, 255, 0.7);
+    box-shadow: 0 0 50px rgba(0, 128, 255, 0.5);
+    transition: all 0.8s ease;
+}
+.scene[style*='--load-appear: 1'] .top {
+    transform: rotateX(90deg) translateZ(80px) scale(1);
+}
+.bottom {
+    transform: rotateX(-90deg) translateZ(0px) scale(0);
+    background: rgba(255, 69, 0, 0.7);
+    border-color: rgba(255, 69, 0, 0.7);
+    box-shadow: 0 0 50px rgba(255, 69, 0, 0.5);
+    transition: all 0.8s ease;
+}
+.scene[style*='--load-appear: 1'] .bottom {
+    transform: rotateX(-90deg) translateZ(80px) scale(1);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateX(-20deg) rotate3d(1, 1, 1, 0deg);
+    }
+
+    100% {
+        transform: rotateX(-20deg) rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@media (max-width: 1100px) {
+    .scene {
+        right: -20%;
+        bottom: -80px;
+    }
+}
+@media (max-width: 500px) {
+    .scene {
+        right: -60%;
+        bottom: -80px;
+    }
+}
