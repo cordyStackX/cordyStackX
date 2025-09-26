@@ -42,8 +42,8 @@
     transition-delay: 0s;
 }
 .cube {
-    width: 20%;
-    height: 20%;
+    width: 100%;
+    height: 100%;
     position: relative;
     transform-style: preserve-3d;
     will-change: transform;

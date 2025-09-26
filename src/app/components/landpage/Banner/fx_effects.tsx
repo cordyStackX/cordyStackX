@@ -23,7 +23,9 @@ export default function Cube() {
                 src={image_src.logo.image__1}
                 alt="FX Logo"
                 title="FX Logo"
-                fill
+                width={120}
+                height={120}
+                priority
                 />
                 <div className={FX_Effects1_css.face + " " + FX_Effects1_css.front}></div>
                 <div className={FX_Effects1_css.face + " " + FX_Effects1_css.back}></div>
