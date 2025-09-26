@@ -1,4 +1,7 @@
 {
+    "banner" : {
+        "image__1" : "blocks.svg"
+    },
     "placeholder" : {
         "image__1" : "/logoipsum-330.svg",
         "image__2" : "/logoipsum-391.svg",

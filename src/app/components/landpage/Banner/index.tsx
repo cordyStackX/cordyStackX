@@ -24,7 +24,7 @@ export default function Banner() {
                 <div className={Banner__css.banner__left_side}>
                     <span className={Banner__css.banner__left_side_title}>
                         <h1>Full Stack Web/Web3 Developer CordyStackX</h1>
-                        <h4>Portfolio</h4> 
+                        <h4>Portfolio</h4>
                     </span>
                     <span className={Banner__css.banner__left_side_links}>
                         <h2>Featured Web3 Projects </h2>
