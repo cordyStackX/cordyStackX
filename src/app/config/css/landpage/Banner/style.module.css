@@ -2,8 +2,7 @@
 .banner__sections,
 .banner__container, 
 .banner__left_side, 
-.banner__right_side, 
-.banner__right_side__imageWrapper,
+.scene, .cube,
 .banner__left_side_title, 
 .banner__left_side_links, 
 .banner__left_side_buttons {
@@ -15,6 +14,7 @@
 .banner__sections {
     height: clamp(690px, 100vh, 980px);
     position: relative;
+    
 }
 .banner__container {
     width: var(--global-width);
@@ -23,6 +23,7 @@
     transform: scale(var(--scroll-shrink));
     transform-origin: top center;
     transition: transform 100ms linear;
+    justify-content: flex-start;
 }
 
 /* Left Sides */
@@ -75,21 +76,49 @@
     transform: scale(0.3);
 }
 
-/* Right Sides */
-.banner__right_side {
-    width: 50%;
-    height: 100%;
+/* FX Effects */
+.scene {
+  width: 200px;
+  height: 200px;
+  perspective: 600px;
+  position: absolute;
+  z-index: -1;
+  right: 10%;
+  transform: scale(1.5) rotate(20deg) translateY(0);
 }
-.banner__right_side__imageWrapper {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    filter: var(--image-grayScale);
-    transition: 100ms ease-in-out;
-    clip-path: polygon(
-        90% 0,   /* top */
-        100% 0,  /* right */
-        100% 100%,  /* bottom */
-        0 100%    /* left */
-    );
+
+.cube {
+  width: 70%;
+  height: 70%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(-20deg) rotateY(20deg);
+  animation: spin 20s infinite linear;
 }
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border: 2px solid var(--foreground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--foreground);
+}
+
+/* Faces placement */
+.front  { transform: rotateY(0deg) translateZ(120px); background: rgba(0, 255, 255, 0.7); border-color: rgba(0, 255, 255, 0.7); box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);}
+.back   { transform: rotateY(180deg) translateZ(120px); background: rgba(138, 43, 226, 0.7); border-color: rgba(138, 43, 226, 0.7); box-shadow: 0 0 20px rgba(138, 43, 226, 0.5); }
+.right  { transform: rotateY(90deg) translateZ(120px); background: rgba(0, 255, 127, 0.7); border-color: rgba(0, 255, 127, 0.7); box-shadow: 0 0 20px rgba(0, 255, 127, 0.5); }
+.left   { transform: rotateY(-90deg) translateZ(120px); background: rgba(255, 215, 0, 0.7); border-color: rgba(255, 215, 0, 0.7); box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); }
+.top    { transform: rotateX(90deg) translateZ(120px); background: rgba(0, 128, 255, 0.7); border-color: rgba(0, 128, 255, 0.7); box-shadow: 0 0 20px rgba(0, 128, 255, 0.5); }
+.bottom { transform: rotateX(-90deg) translateZ(120px); background: rgba(255, 69, 0, 0.7); border-color: rgba(255, 69, 0, 0.7);  box-shadow: 0 0 20px rgba(255, 69, 0, 0.5); }
+
+@keyframes spin {
+  0% { transform: rotateX(-20deg) rotateY(0deg); }
+  100%   { transform: rotateX(-20deg) rotateY(360deg); }
+}
+

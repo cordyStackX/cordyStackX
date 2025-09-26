@@ -1,16 +1,15 @@
 import React from "react";
 import { Banner__css } from "@/app/config/css/landpage";
 import setting from "@/app/config/conf/setting.json";
-import image__src from "@/app/config/conf/images.json";
 import { 
     FaLinkedin, FaGithub, 
     FaFacebook, FaTwitter, 
     FaTiktok
 } from "react-icons/fa";
-import Image from "next/image";
 import {
     UseScroll__formula
 } from "@/app/modules";
+import Cube from "./fx_effects";
 
 
 export default function Banner() {
@@ -56,20 +55,9 @@ export default function Banner() {
                     </div>
                     
                 </div>
-                <div className={Banner__css.banner__right_side}>
-                    <div className={Banner__css.banner__right_side__imageWrapper}>
-                        <Image 
-                        src={image__src.banner.image__1}
-                        alt="Banner Image"
-                        title="Building Gstatics"
-                        width={1000}
-                        height={980}
-                        priority={false}
-                        unoptimized
-                        />
-                    </div>
-                </div>
+                <Cube />
             </div>
+            
         </section>
     );
 }
