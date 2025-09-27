@@ -1,11 +1,12 @@
-import React from 'react';
-import { useEffect } from 'react';
- 
-export default function UseEffect(
-    callback: () => void | (() => void),
-    deps: React.DependencyList = []
-) {
+import React from "react";
+import { useEffect } from "react";
 
-    useEffect(callback, deps);
+interface UseEffectProps {
+  callback: () => void | (() => void);
+  deps?: React.DependencyList;
+  limiter?: boolean;
+}
 
+export default function UseEffect({ callback, deps = [], limiter = true }: UseEffectProps) {
+  useEffect(callback, limiter ? deps : undefined);
 }

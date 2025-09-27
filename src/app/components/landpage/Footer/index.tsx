@@ -9,12 +9,15 @@ import {
     FaWhatsapp
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { GetEmail } from "@/app/modules";
 
 export default function Footer() {
     const { ref: footer, isInView: footerIsInView } = useInView<HTMLDivElement>(false);
     const { ref: show_info, isInView: show_infoIsInView } = useInView<HTMLDivElement>(false);
     const { ref: show_src, isInView: show_srcIsInView } = useInView<HTMLDivElement>(false);
     const { ref: show_src_h2, isInView: show_src_h2IsInView } = useInView<HTMLDivElement>(false);
+
+    const email = GetEmail();
 
     return(
         <footer id="contacts" className={Footer__css.contacts__footer} ref={footer} 
@@ -40,8 +43,8 @@ export default function Footer() {
                 </div>
                 <div ref={show_src} className={Footer__css.contacts__src} style={{'--show-src': show_srcIsInView ? 1 : 0} as React.CSSProperties}>
                     <h3>Contacts</h3>
-                    <a href="mailto: cordovamarcgiestinlouis@gmail.com">
-                        <MdEmail size={30}/><p>cordovamarcgiestinlouis@gmail.com</p>
+                    <a href={`mailto:${email}`}>
+                        <MdEmail size={30}/><p>{email}</p>
                     </a>
                     <a href="https://t.me/cordystackx" target="_blank" rel="noopener noreferrer">
                         <FaTelegram size={30}/><p>@CordyStackX</p>

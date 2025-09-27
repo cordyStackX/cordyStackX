@@ -5,7 +5,7 @@ export default function useInView<T extends HTMLElement>(Observe = false, thresh
   const ref = UseRef<T | null>(null);
   const [isInView, setIsInView] = UseState(false);
 
-  UseEffect(() => {
+  UseEffect({ callback: () => {
     const element = ref.current;
     if (!element) return;
 
@@ -29,7 +29,7 @@ export default function useInView<T extends HTMLElement>(Observe = false, thresh
     return () => {
       if (element) observer.unobserve(element);
     };
-  }, []);
+  }});
 
   return { ref, isInView };
 }

@@ -8,3 +8,5 @@ export { default as useInView } from "./InView";
 export { default as Cursor } from "./Cursor";
 
 export { default as Gtag } from "./Gtag";
+
+export { default as Fetch_to } from "./Fetch_to";

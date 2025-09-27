@@ -10,3 +10,6 @@ export { default as UseScroll__shadow } from "./formula/UseScroll__shadow";
 export { default as UseScroll__Deg } from "./formula/UseScroll__deg";
 
 //Utils
+
+//Security
+export { default as GetEmail } from "./security/GetEmail";

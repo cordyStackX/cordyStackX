@@ -50,7 +50,9 @@
     transform: rotateX(-20deg) rotateY(20deg);
     animation: spin 20s infinite linear;
 }
-
+.cube span {
+    filter: var(--image-invert);
+}
 .nav1_circle {
     width: 20%;
     height: 20%;

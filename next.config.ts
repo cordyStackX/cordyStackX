@@ -1,5 +1,5 @@
 // next.config.js
-/** @type {import('next').NextConfig} */
+/** @type {import('next').NextConfig}; */
 const nextConfig = {
   images: {
     domains: [
@@ -16,6 +16,6 @@ const nextConfig = {
     ],
     formats: ['image/avif', 'image/webp'], // ✅ faster formats
   },
-}
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

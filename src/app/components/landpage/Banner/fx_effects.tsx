@@ -19,14 +19,16 @@ export default function Cube() {
             <div className={FX_Effects1_css.border__circle}></div>
             <div className={FX_Effects1_css.border__circle2}></div>
             <div className={FX_Effects1_css.cube}>
-                <Image 
-                src={image_src.logo.image__1}
-                alt="FX Logo"
-                title="FX Logo"
-                width={120}
-                height={120}
-                priority
-                />
+                <span>
+                    <Image 
+                    src={image_src.logo.image__1}
+                    alt="FX Logo"
+                    title="FX Logo"
+                    width={120}
+                    height={120}
+                    priority
+                    />
+                </span>
                 <div className={FX_Effects1_css.face + " " + FX_Effects1_css.front}></div>
                 <div className={FX_Effects1_css.face + " " + FX_Effects1_css.back}></div>
                 <div className={FX_Effects1_css.face + " " + FX_Effects1_css.right}></div>

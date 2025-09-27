@@ -5,7 +5,7 @@ import { UseEffect, UseRef } from '@/app/modules';
 export default function Cursor() {
   const cursorRef = UseRef<HTMLDivElement>(null);
 
-  UseEffect(() => {
+  UseEffect({ callback: () => {
     const cursor = cursorRef.current;
 
     const moveCursor = (e: MouseEvent) => {
@@ -17,7 +17,8 @@ export default function Cursor() {
 
     document.addEventListener('mousemove', moveCursor);
     return () => document.removeEventListener('mousemove', moveCursor);
-  }, []);
+  }
+});
 
   return (
     <div
