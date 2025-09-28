@@ -6,12 +6,12 @@ import { useInView } from "@/app/utilities";
 
 export default function About() {
   // each element gets its own hook
-  const { ref: img1Ref, isInView: img1InView } = useInView<HTMLSpanElement>();
-  const { ref: img2Ref, isInView: img2InView } = useInView<HTMLSpanElement>();
-  const { ref: titleRef, isInView: titleInView } = useInView<HTMLHeadingElement>();
-  const { ref: lineRef, isInView: lineInView } = useInView<HTMLDivElement>();
-  const { ref: para1, isInView: para1InView } = useInView<HTMLDivElement>();
-  const { ref: para2, isInView: para2InView } = useInView<HTMLDivElement>();
+  const { ref: img1Ref, isInView: img1InView } = useInView<HTMLSpanElement>(true);
+  const { ref: img2Ref, isInView: img2InView } = useInView<HTMLSpanElement>(true);
+  const { ref: titleRef, isInView: titleInView } = useInView<HTMLHeadingElement>(true);
+  const { ref: lineRef, isInView: lineInView } = useInView<HTMLDivElement>(true);
+  const { ref: para1, isInView: para1InView } = useInView<HTMLDivElement>(true);
+  const { ref: para2, isInView: para2InView } = useInView<HTMLDivElement>(true);
 
   return (
     <section id="About" className={About__css.about__sections}>

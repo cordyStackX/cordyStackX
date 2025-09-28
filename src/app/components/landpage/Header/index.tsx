@@ -5,13 +5,13 @@ import {
 } from "@/app/modules";
 import Hamburger from "hamburger-react";
 
-import { useAccount } from "wagmi";
-import { WalletOptions, Account } from "@/app/services/wagmi";
+// import { useAccount } from "wagmi";
+// import { WalletOptions, Account } from "@/app/services/cordy_connect";
 
 import image__src from "@/app/config/conf/images.json";
 
 export default function Header() {
-    const { isConnected } = useAccount();
+    // const { isConnected } = useAccount();
     const [ isOpen, setOpen ] = UseState(false);
 
     return(
@@ -76,7 +76,7 @@ export default function Header() {
                     </ul>
                 </nav>
                 <div className={Header__css.wallet__connect}>
-                    {isConnected ? <Account />  : <WalletOptions /> }
+                    
                 </div>
             </div>
         </header>

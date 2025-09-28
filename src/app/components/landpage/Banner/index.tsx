@@ -7,7 +7,7 @@ import {
     FaTiktok
 } from "react-icons/fa";
 import {
-    UseScroll__formula
+    UseScroll__scale, UseScroll__opacity
 } from "@/app/modules";
 import Cube from "./fx_effects";
 import { useInView } from "@/app/utilities";
@@ -15,14 +15,15 @@ import { useInView } from "@/app/utilities";
 
 export default function Banner() {
 
-    const scrollShrink = UseScroll__formula();
+    const scrollShrink = UseScroll__scale();
+    const scrollFade = UseScroll__opacity();
     const { ref: title, isInView: titleIsInView } = useInView<HTMLDivElement>(true);
     const { ref: links, isInView: linksIsInView } = useInView<HTMLDivElement>(true);
 
     return(
         <section className={Banner__css.banner__sections}>
             <div className={Banner__css.banner__container} 
-            style={{'--scroll-shrink' : `${scrollShrink}`} as React.CSSProperties}
+            style={{ '--scroll-shrink' : `${scrollShrink}`, '--scroll-fade' : `${scrollFade}`} as React.CSSProperties}
             >
                 <div className={Banner__css.banner__left_side} style={{'--fade-in': titleIsInView ? 1 : 0} as React.CSSProperties} >
                     <div className={Banner__css.banner__left_side_title} >

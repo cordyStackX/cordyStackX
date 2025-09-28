@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 import {
     ProvidersClientWrapper
-} from "@/app/services/wagmi";
+} from "@/app/services/cordy_connect";
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";

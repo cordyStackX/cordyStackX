@@ -9,7 +9,7 @@
 }
 .contacts__footer {
     width: 100dvw;
-    height: var(--height);
+    height: min(600px, 70vh);
     background: var(--background);
     position: absolute;
     bottom: 0;

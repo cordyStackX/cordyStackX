@@ -2,7 +2,7 @@ import React from "react";
 import { Placeholder__css } from "@/app/config/css/landpage";
 import Image from "next/image";
 import image__src from "@/app/config/conf/images.json";
-import { UseScroll__shadow } from "@/app/modules";
+import { UseScroll__box_shadow } from "@/app/modules";
 import { useInView } from "@/app/utilities";
 
 export default function Placeholder() {
@@ -24,7 +24,7 @@ export default function Placeholder() {
     ];
 
     return(
-        <section className={Placeholder__css.placeholder__section} style={{'--scroll-shadow' : `${UseScroll__shadow()}rem`} as React.CSSProperties}>
+        <section className={Placeholder__css.placeholder__section} style={{'--scroll-shadow' : `${UseScroll__box_shadow()}rem`} as React.CSSProperties}>
             <div className={`${Placeholder__css.placeholder__container} ${PHolderIsInView ? Placeholder__css.in_view : ''}`} ref={PHolder}>
                 <div className={Placeholder__css.placeholder__logos}>
                     {[...loremIpsum, ...loremIpsum].map((src, idx) => (
