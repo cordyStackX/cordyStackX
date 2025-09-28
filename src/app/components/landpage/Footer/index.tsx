@@ -12,7 +12,6 @@ import { MdEmail } from "react-icons/md";
 import { GetEmail } from "@/app/modules";
 
 export default function Footer() {
-    const { ref: footer, isInView: footerIsInView } = useInView<HTMLDivElement>(false);
     const { ref: show_info, isInView: show_infoIsInView } = useInView<HTMLDivElement>(false);
     const { ref: show_src, isInView: show_srcIsInView } = useInView<HTMLDivElement>(false);
     const { ref: show_src_h2, isInView: show_src_h2IsInView } = useInView<HTMLDivElement>(false);
@@ -20,9 +19,8 @@ export default function Footer() {
     const email = GetEmail();
 
     return(
-        <footer id="contacts" className={Footer__css.contacts__footer} ref={footer} 
-        style={{'--trans': footerIsInView ? '100%' : '0', '--footer-shadows': footerIsInView ? '0 -10vh 30vh 90vh var(--background)' : '0 0 2rem 1rem var(--background)'} as React.CSSProperties}>
-            <div className={Footer__css.contacts__container}>
+        <footer id="contacts" className={Footer__css.contacts__footer} >
+            <div className={Footer__css.contacts__container} >
                 <div ref={show_info} className={Footer__css.contacts__info} style={{'--show-info': show_infoIsInView ? 1 : 0} as React.CSSProperties}>
                     <h3>Social Media</h3>
                     <a href={setting.links__src.Social__links.linked_in} target="_blank" rel="noopener noreferrer">

@@ -1,5 +1,6 @@
 .projects__title,
 .projects__stat,
+/* .projects__status,  */
 .projects__stat_imageContain,
 .projects__stat_title,
 .projects__stat_title_buttons,
@@ -11,7 +12,7 @@
 }
 .projects__sections {
     width: 100%;
-    height: 1300px;
+    height: auto;
     position: relative;
     background-color: var(--background);
     overflow: hidden;
@@ -94,14 +95,13 @@
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     width: 100%;         
-    height: 700px;
+    height: auto;
     padding: 0 calc(50% - 400px);
-    gap: 3rem;
 }
 
 .projects__stat {
-    flex: 0 0 100%;      
-    height: 90%;            
+    flex: 0 0 90%;      
+    height: 600px;            
     scroll-snap-align: center;
     border-top: 2px solid var(--foreground);
     border-left: 2px solid var(--foreground);
@@ -110,9 +110,8 @@
     transition: 0.5s ease; 
     pointer-events: none;
     flex-flow: column;
-    align-items: flex-start;
-    justify-content: flex-start;
     overflow: hidden;
+    margin: 0 2rem;
 }
 
 .projects__stat_grow {

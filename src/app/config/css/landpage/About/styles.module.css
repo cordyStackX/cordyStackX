@@ -80,7 +80,7 @@
 /* Right Side */
 .about__right_side {
     width: min(600px, 90%);
-    height: clamp(380px, 40vh, 800px);
+    height: clamp(380px, 40vh, 400px);
     justify-content: flex-start;
     margin: 0 2rem;
 }

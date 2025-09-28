@@ -9,24 +9,24 @@
 }
 .contacts__footer {
     width: 100dvw;
-    height: min(600px, 70vh);
+    height: auto;
     background: var(--background);
-    position: absolute;
-    bottom: 0;
-    transition: 0.5s ease-in-out;
+    position: relative;
     box-shadow: var(--footer-shadows);
     overflow: hidden;
-    z-index: 1;
+    padding: 4rem 0 1rem 0;
+    border-top: 1px solid #fff;
 }
 .contacts__container {
     width: var(--global-width);
-    height: 100%;
+    height: auto;
     margin: 0 auto;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
     padding: 1rem;
     gap: 10px;
+    transition: 0.5s ease-in-out;
 }
 .contacts__info,
 .contacts__src {
@@ -47,6 +47,7 @@
 }
 .contacts__info {
     opacity: var(--show-info);
+    transition: all 1s ease;
 }
 .contacts__info a,
 .contacts__info h3 {

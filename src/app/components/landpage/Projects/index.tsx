@@ -55,8 +55,8 @@ export default function Projects() {
         }
     };
 
-    const { ref: title, isInView: titleIsInView } = useInView<HTMLDivElement>();
-    const { ref: para1, isInView: para1IsInView } = useInView<HTMLDivElement>();
+    const { ref: title, isInView: titleIsInView } = useInView<HTMLDivElement>(true);
+    const { ref: para1, isInView: para1IsInView } = useInView<HTMLDivElement>(true);
 
     return(
         <section id="Projects" className={Projects__css.projects__sections}>
