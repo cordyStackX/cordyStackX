@@ -1,0 +1,19 @@
+:root {
+    --foreground_wagmi: #171717;
+    --background_wagmi: #FAFAFA;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground_wagmi: #ededed;
+    --background_wagmi: #121212;
+  }
+}
+.button__button {
+    padding: 0.8rem;
+    background-color: var(--foreground_wagmi);
+    color: var(--background_wagmi);
+    font-weight: bold;
+    cursor: pointer;
+    border: transparent;
+}

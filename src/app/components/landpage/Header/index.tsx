@@ -6,7 +6,11 @@ import {
 import Hamburger from "hamburger-react";
 
 // import { useAccount } from "wagmi";
-// import { WalletOptions, Account } from "@/app/services/cordy_connect";
+import { 
+    // WalletOptions, 
+    // Account, 
+    ConnectWalletBT
+} from "@/app/services/cordy_connect";
 
 import image__src from "@/app/config/conf/images.json";
 
@@ -52,7 +56,7 @@ export default function Header() {
                 </div>
 
                 <a href="#" className={Header__css.logo__links}>
-                    <Image src={image__src.logo.image__1}  alt="logo" title="This is my logo" width={30} height={30} style={{filter: "var(--image-invert)"}}/>
+                    <Image src={image__src.logo.image__1}  alt="logo" title="This is my logo" width={25} height={25} style={{filter: "var(--image-invert)"}}/>
                     <h3>CordyStackX</h3>
                 </a>
 
@@ -76,7 +80,7 @@ export default function Header() {
                     </ul>
                 </nav>
                 <div className={Header__css.wallet__connect}>
-                    
+                    <ConnectWalletBT />
                 </div>
             </div>
         </header>

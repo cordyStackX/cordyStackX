@@ -2,6 +2,7 @@ import React from 'react';
 import { useConnect } from 'wagmi';
 import type { Connector } from 'wagmi';
 
+
 export default function WalletButton() {
   const { connectors, connect } = useConnect();
 
