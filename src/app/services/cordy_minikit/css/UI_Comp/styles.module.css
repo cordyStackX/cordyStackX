@@ -1,7 +1,8 @@
 .container,
 .connector,
 .connector div,
-.info {
+.info,
+.info span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,10 +74,9 @@
 }
 .info span {
     flex-flow: column;
-    width: 80%;
-    padding: 0;
 }
 .info span p {
+    width: 80%;
     overflow: hidden;    
     white-space: nowrap;  
     text-overflow: ellipsis; 
