@@ -7,11 +7,8 @@ export default function ConnectWalletBT() {
   const { openModal } = useWalletModal();
   const { isConnected, address } = useAccount();
 
-   const NEXT_PUBLIC_TOKENADDRESS = process.env.NEXT_PUBLIC_TOKENADDRESS as `0x${string}` | undefined;
-
   const { data: balance } = useBalance({
-    address,
-    token: NEXT_PUBLIC_TOKENADDRESS
+    address
   });
 
   return (
