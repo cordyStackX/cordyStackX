@@ -5,17 +5,13 @@ import {
 } from "@/app/modules";
 import Hamburger from "hamburger-react";
 
-// import { useAccount } from "wagmi";
 import { 
-    // WalletOptions, 
-    // Account, 
     ConnectWalletBT
-} from "@/app/services/cordy_connect";
+} from "@/app/services/cordy_minikit";
 
 import image__src from "@/app/config/conf/images.json";
 
 export default function Header() {
-    // const { isConnected } = useAccount();
     const [ isOpen, setOpen ] = UseState(false);
 
     return(

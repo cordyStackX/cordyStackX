@@ -43,3 +43,5 @@ next-env.d.ts
 
 
 .npmrc
+
+/src/generated/prisma

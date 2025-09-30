@@ -1,11 +1,11 @@
 {
     "cordy__connect" : {
-        "repo" : "https://github.com/cordyStackX/cordyStackX/tree/main/src/app/services/cordy_connect",
+        "repo" : "https://github.com/cordyStackX/cordyStackX/tree/main/src/app/services/cordy_minikit",
         "visit" : "https://cordy-stack-x.vercel.app/",
         "profile" : "/logo.svg",
         "cover__photo" : "/CordyStack__cover.png",
-        "title" : "Cordy Connect",
-        "descriptions" : "lightweight and customizable wallet connector built for Web3 applications. Inspired by RainbowKit, it streamlines wallet integration while keeping the developer experience simple and flexible. With a focus on speed, ease of use, and seamless UI customization, Cordy Connect empowers dApps to onboard users effortlessly."
+        "title" : "Cordy Mini Kit",
+        "descriptions" : "lightweight and customizable wallet connector built for Web3 applications. Inspired by RainbowKit, it streamlines wallet integration while keeping the developer experience simple and flexible. With a focus on speed, ease of use, and seamless UI customization, Cordy Minikit empowers dApps to onboard users effortlessly."
     },
     "lccb_ai" : {
         "repo" : "https://github.com/cordyStackX/lccb_ai.git",

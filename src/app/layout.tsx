@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/next";
 
 import {
     ProvidersClientWrapper
-} from "@/app/services/cordy_connect";
+} from "@/app/services/cordy_minikit";
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -38,9 +38,9 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Cursor />
-        <ProvidersClientWrapper>
-        {children}
-        </ProvidersClientWrapper>
+          <ProvidersClientWrapper>
+            {children}  
+          </ProvidersClientWrapper>
         <SpeedInsights />
         <Analytics />
       </body>
