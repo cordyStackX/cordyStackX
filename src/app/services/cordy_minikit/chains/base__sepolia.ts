@@ -1,5 +1,4 @@
 import { defineChain } from "viem";
-import setting from '@/app/config/conf/setting.json';
 
 export default function BaseSepolia() {
     const baseSepolia = defineChain({

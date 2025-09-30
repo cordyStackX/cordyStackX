@@ -1,4 +1,3 @@
-// UI_Comp.tsx
 "use client";
 import Image__src from "../config/Image.json";
 import { UI_Comp__css } from "../css";
