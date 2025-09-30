@@ -1,6 +1,5 @@
 "use client";
 import Image__src from "../config/Image.json";
-import Address__src from "../config/config.json";
 import { UI_Comp__css } from "../css";
 import { WalletButton, Disconnect, getTokenBalance } from "../controllers";
 import { useWalletModal } from "../wagmi__providers";
@@ -23,10 +22,10 @@ export default function UI_Comp() {
 
   const Get_Balance = async () => {
 
-    if (!address || !process.env.NEXT_PUBLIC_TOKENADDRESS || !Address__src.token_address) {
+    if (!address || !process.env.NEXT_PUBLIC_TOKENADDRESS) {
       throw new Error("Address or token address is undefined");
     }
-    const balance = await getTokenBalance(address, process.env.NEXT_PUBLIC_TOKENADDRESS || Address__src.token_address);
+    const balance = await getTokenBalance(address, process.env.NEXT_PUBLIC_TOKENADDRESS);
 
     setBalance(balance);
     return;
