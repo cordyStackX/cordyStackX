@@ -73,7 +73,7 @@ export default function UI_Comp() {
       <div className={UI_Comp__css.connector}>
         <p className={UI_Comp__css.closed} onClick={closeModal}>✕</p>
         <img src={Image__src.logo} width={50} height={50} />
-        <h2>CordyStack Mini Kit</h2>
+        <h2>Cordy MiniKit</h2>
 
         <div>
             <h3>{loading ? "Loading..." : ""}</h3>

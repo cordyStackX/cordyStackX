@@ -11,5 +11,5 @@ MiniKit CordyStack is my tiny, power-packed dev setup. Perfect for coding, hacki
 ## Usage
 1. Open my official packages
 ```bash
-
+    npm install @cordystackx/cordy_minikit
 ```
