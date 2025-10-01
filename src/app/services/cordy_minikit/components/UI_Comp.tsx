@@ -52,7 +52,7 @@ export default function UI_Comp() {
               </span>
               
             ) : (
-                <p style={{color: "#fff"}}>Loading balance...</p>
+                <p style={{color: "var(--foreground_wagmi)"}}>Loading balance...</p>
             )}
             
           </div>
