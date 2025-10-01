@@ -22,6 +22,13 @@ MiniKit CordyStack is my tiny, power-packed dev setup. Perfect for coding, hacki
 ```bash
     import { ConnectWalletBT } from "@cordystackx/cordy_minikit";
         
-        <ConnectWalletBT>
+        <ConnectWalletBT/>
+
+```
+2. Use of Transactions
+```bash
+    import { CordyStackTrans } from "@cordystackx/cordy_minikit";
+        
+        CordyStackTrans(address: string, cost: number | string);
 
 ```
