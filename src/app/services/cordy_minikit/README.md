@@ -9,7 +9,19 @@ MiniKit CordyStack is my tiny, power-packed dev setup. Perfect for coding, hacki
 - Easy to customize
 
 ## Usage
-1. Open my official packages
+1. Import the Providers inside the layout.ts
 ```bash
-    npm install @cordystackx/cordy_minikit
+    import { ProvidersClientWrapper } from "@cordystackx/cordy_minikit";
+        
+        <ProvidersClientWrapper>
+            {children}
+        </ProvidersClientWrapper>
+
+```
+2. Use of Connect Buttons
+```bash
+    import { ConnectWalletBT } from "@cordystackx/cordy_minikit";
+        
+        <ConnectWalletBT>
+
 ```
