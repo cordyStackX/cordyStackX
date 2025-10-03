@@ -11,9 +11,9 @@ import {
 import { MdEmail } from "react-icons/md";
 
 export default function Footer() {
-    const { ref: show_info, isInView: show_infoIsInView } = useInView<HTMLDivElement>(false);
-    const { ref: show_src, isInView: show_srcIsInView } = useInView<HTMLDivElement>(false);
-    const { ref: show_src_h2, isInView: show_src_h2IsInView } = useInView<HTMLDivElement>(false);
+    const { ref: show_info, isInView: show_infoIsInView } = useInView<HTMLDivElement>(true);
+    const { ref: show_src, isInView: show_srcIsInView } = useInView<HTMLDivElement>(true);
+    const { ref: show_src_h2, isInView: show_src_h2IsInView } = useInView<HTMLDivElement>(true);
 
     return(
         <footer id="contacts" className={Footer__css.contacts__footer} >

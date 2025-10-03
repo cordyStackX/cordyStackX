@@ -7,7 +7,7 @@ import Hamburger from "hamburger-react";
 
 import { 
     ConnectWalletBT
-} from "@/app/services/cordy_minikit";
+} from "@cordystackx/cordy_minikit";
 
 import image__src from "@/app/config/conf/images.json";
 

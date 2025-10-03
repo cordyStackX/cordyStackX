@@ -17,23 +17,18 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
+    "@cordystackx/cordy_minikit": "^0.3.1",
     "@ethereumjs/tx": "^10.0.0",
     "@prisma/client": "^6.16.2",
-    "@reown/appkit": "^1.8.6",
-    "@reown/appkit-adapter-wagmi": "^1.8.6",
     "@tanstack/react-query": "^5.89.0",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
-    "ethers": "^6.15.0",
     "hamburger-react": "^2.5.2",
     "next": "^15.5.2",
     "next-sitemap": "^4.2.3",
-    "qr": "^0.5.2",
     "react": "19.1.1",
     "react-dom": "19.1.1",
-    "react-icons": "^5.5.0",
-    "viem": "^2.36.0",
-    "wagmi": "^2.17.0"
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",

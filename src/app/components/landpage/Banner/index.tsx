@@ -62,7 +62,7 @@ export default function Banner() {
                     </p>
                     <div className={Banner__css.banner__left_side_buttons}>
                         <span></span>
-                        <button>Build With Me</button>
+                        <a href="#About"><button>Build With Me</button></a>
                     </div>
                     
                 </div>

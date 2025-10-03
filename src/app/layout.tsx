@@ -4,8 +4,9 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from "@vercel/analytics/next";
 
 import {
-    ProvidersClientWrapper
-} from "@/app/services/cordy_minikit";
+    Providers
+} from "@/app/services/minikit";
+import "@cordystackx/cordy_minikit/dist/index.css";
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -38,9 +39,9 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Cursor />
-          <ProvidersClientWrapper>
+          <Providers>
             {children}  
-          </ProvidersClientWrapper>
+          </Providers>
         <SpeedInsights />
         <Analytics />
       </body>
