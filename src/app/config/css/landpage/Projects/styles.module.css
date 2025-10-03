@@ -100,7 +100,7 @@
 }
 
 .projects__stat {
-    flex: 0 0 90%;      
+    flex: 0 0 95%;      
     height: 600px;            
     scroll-snap-align: center;
     border-top: 2px solid var(--foreground);
