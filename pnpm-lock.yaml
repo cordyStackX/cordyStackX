@@ -15,10 +15,10 @@ importers:
         specifier: ^10.0.0
         version: 10.0.0
       '@prisma/client':
-        specifier: ^6.16.2
+        specifier: ^6.17.1
         version: 6.17.1(prisma@6.17.1(typescript@5.9.3))(typescript@5.9.3)
       '@tanstack/react-query':
-        specifier: ^5.89.0
+        specifier: ^5.90.3
         version: 5.90.3(react@19.1.1)
       '@vercel/analytics':
         specifier: ^1.5.0
@@ -33,7 +33,7 @@ importers:
         specifier: ^2.5.2
         version: 2.5.2(react@19.1.1)
       next:
-        specifier: ^15.5.2
+        specifier: ^15.5.5
         version: 15.5.5(react-dom@19.1.1(react@19.1.1))(react@19.1.1)
       next-sitemap:
         specifier: ^4.2.3
@@ -52,28 +52,28 @@ importers:
         specifier: ^3.3.1
         version: 3.3.1
       '@eslint/js':
-        specifier: ^9.34.0
+        specifier: ^9.37.0
         version: 9.37.0
       '@next/eslint-plugin-next':
-        specifier: ^15.5.2
+        specifier: ^15.5.5
         version: 15.5.5
       '@types/node':
-        specifier: ^20
+        specifier: ^20.19.21
         version: 20.19.21
       '@types/react':
-        specifier: ^19
+        specifier: ^19.2.2
         version: 19.2.2
       '@types/react-dom':
-        specifier: ^19
+        specifier: ^19.2.2
         version: 19.2.2(@types/react@19.2.2)
       '@typescript-eslint/eslint-plugin':
-        specifier: ^8.41.0
+        specifier: ^8.46.1
         version: 8.46.1(@typescript-eslint/parser@8.46.1(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
       '@typescript-eslint/parser':
-        specifier: ^8.41.0
+        specifier: ^8.46.1
         version: 8.46.1(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
       eslint:
-        specifier: ^9.34.0
+        specifier: ^9.37.0
         version: 9.37.0(jiti@2.6.1)
       eslint-config-next:
         specifier: 15.5.2
@@ -97,13 +97,13 @@ importers:
         specifier: ^5.2.0
         version: 5.2.0(eslint@9.37.0(jiti@2.6.1))
       globals:
-        specifier: ^16.3.0
+        specifier: ^16.4.0
         version: 16.4.0
       prisma:
-        specifier: ^6.16.2
+        specifier: ^6.17.1
         version: 6.17.1(typescript@5.9.3)
       typescript:
-        specifier: ^5
+        specifier: ^5.9.3
         version: 5.9.3
 
 packages:
@@ -3592,7 +3592,7 @@ snapshots:
       '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
       '@types/debug': 4.1.12
-      debug: 4.4.3
+      debug: 4.3.4
       pony-cause: 2.1.11
       semver: 7.7.3
       uuid: 9.0.1
@@ -3606,7 +3606,7 @@ snapshots:
       '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
       '@types/debug': 4.1.12
-      debug: 4.4.3
+      debug: 4.3.4
       pony-cause: 2.1.11
       semver: 7.7.3
       uuid: 9.0.1
@@ -4054,7 +4054,7 @@ snapshots:
 
   '@scure/bip32@1.7.0':
     dependencies:
-      '@noble/curves': 1.9.7
+      '@noble/curves': 1.9.0
       '@noble/hashes': 1.8.0
       '@scure/base': 1.2.6
 
@@ -4900,11 +4900,6 @@ snapshots:
     optionalDependencies:
       typescript: 5.9.3
       zod: 4.1.12
-
-  abitype@1.1.1(typescript@5.9.3)(zod@3.22.4):
-    optionalDependencies:
-      typescript: 5.9.3
-      zod: 3.22.4
 
   abitype@1.1.1(typescript@5.9.3)(zod@4.1.12):
     optionalDependencies:
@@ -6297,11 +6292,11 @@ snapshots:
   ox@0.6.7(typescript@5.9.3)(zod@4.1.12):
     dependencies:
       '@adraffy/ens-normalize': 1.11.1
-      '@noble/curves': 1.9.7
-      '@noble/hashes': 1.8.0
-      '@scure/bip32': 1.7.0
-      '@scure/bip39': 1.6.0
-      abitype: 1.1.1(typescript@5.9.3)(zod@4.1.12)
+      '@noble/curves': 1.8.1
+      '@noble/hashes': 1.7.1
+      '@scure/bip32': 1.6.2
+      '@scure/bip39': 1.5.4
+      abitype: 1.0.8(typescript@5.9.3)(zod@4.1.12)
       eventemitter3: 5.0.1
     optionalDependencies:
       typescript: 5.9.3
@@ -6345,7 +6340,7 @@ snapshots:
       '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
-      abitype: 1.1.1(typescript@5.9.3)(zod@3.22.4)
+      abitype: 1.1.0(typescript@5.9.3)(zod@3.22.4)
       eventemitter3: 5.0.1
     optionalDependencies:
       typescript: 5.9.3
@@ -6360,7 +6355,7 @@ snapshots:
       '@noble/hashes': 1.8.0
       '@scure/bip32': 1.7.0
       '@scure/bip39': 1.6.0
-      abitype: 1.1.1(typescript@5.9.3)(zod@4.1.12)
+      abitype: 1.1.0(typescript@5.9.3)(zod@4.1.12)
       eventemitter3: 5.0.1
     optionalDependencies:
       typescript: 5.9.3
