@@ -7,7 +7,7 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "postbuild": "next-sitemap"
+    "post": "next-sitemap"
   },
   "repository": {
     "type": "git",
