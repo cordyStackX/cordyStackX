@@ -10,7 +10,7 @@
     "post": "next-sitemap"
   },
   "dependencies": {
-    "@cordystackx/cordy_minikit": "^0.7.6",
+    "@cordystackx/cordy_minikit": "^0.8.8",
     "@prisma/client": "^6.17.1",
     "@tanstack/react-query": "^5.90.3",
     "@vercel/analytics": "^1.5.0",
