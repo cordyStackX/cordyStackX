@@ -6,7 +6,8 @@ import { Analytics } from "@vercel/analytics/next";
 import {
     Providers
 } from "@/app/services/minikit";
-import "@cordystackx/cordy_minikit/dist/index.css";
+import '@cordystackx/cordy_minikit/dist/css/UI_Comp/styles.module.css';
+import '@cordystackx/cordy_minikit/dist/css/Buttons/styles.module.css';
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";

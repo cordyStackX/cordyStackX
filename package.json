@@ -17,8 +17,9 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
-    "@cordystackx/cordy_minikit": "^0.3.1",
+    "@cordystackx/cordy_minikit": "^0.3.6",
     "@ethereumjs/tx": "^10.0.0",
+    "@paulmillr/qr": "0.3.0",
     "@prisma/client": "^6.17.1",
     "@tanstack/react-query": "^5.90.3",
     "@vercel/analytics": "^1.5.0",
