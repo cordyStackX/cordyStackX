@@ -9,13 +9,6 @@
     "lint": "eslint",
     "post": "next-sitemap"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/cordystackx/cordy_portfolio.git"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "dependencies": {
     "@cordystackx/cordy_minikit": "^0.3.6",
     "@ethereumjs/tx": "^10.0.0",

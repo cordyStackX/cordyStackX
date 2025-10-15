@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@cordystackx/cordy_minikit':
-        specifier: ^0.3.6
-        version: 0.3.6(@tanstack/query-core@5.90.3)(@types/react@19.2.2)(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.12)
+        specifier: ^0.3.8
+        version: 0.3.8(@tanstack/query-core@5.90.3)(@types/react@19.2.2)(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.12)
       '@ethereumjs/tx':
         specifier: ^10.0.0
         version: 10.0.0
@@ -130,8 +130,8 @@ packages:
   '@coinbase/wallet-sdk@4.3.6':
     resolution: {integrity: sha512-4q8BNG1ViL4mSAAvPAtpwlOs1gpC+67eQtgIwNvT3xyeyFFd+guwkc8bcX5rTmQhXpqnhzC4f0obACbP9CqMSA==}
 
-  '@cordystackx/cordy_minikit@0.3.6':
-    resolution: {integrity: sha512-I9/vwAF4nKK+Lq/Lf/S6W4lLZZ4ut/+lP4YualpOQk3GTvz3zemu4jTFaG28drqKOsLmKSb2C3SdNBIRiAZfbA==}
+  '@cordystackx/cordy_minikit@0.3.8':
+    resolution: {integrity: sha512-kZ3cCubrRvWNenX0xA05o/EFHMyeLF+81U6hR3c3RapvkRRRHJ0ZF/2fDo/NtT4xIqUDgvphoDTCIOlvOckIfA==}
 
   '@corex/deepmerge@4.0.43':
     resolution: {integrity: sha512-N8uEMrMPL0cu/bdboEWpQYb/0i2K5Qn8eCsxzOmxSggJbbQte7ljMRoXm917AbntqTGOzdTu+vP3KOOzoC70HQ==}
@@ -3314,7 +3314,7 @@ snapshots:
       - utf-8-validate
       - zod
 
-  '@cordystackx/cordy_minikit@0.3.6(@tanstack/query-core@5.90.3)(@types/react@19.2.2)(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.12)':
+  '@cordystackx/cordy_minikit@0.3.8(@tanstack/query-core@5.90.3)(@types/react@19.2.2)(bufferutil@4.0.9)(typescript@5.9.3)(utf-8-validate@5.0.10)(zod@4.1.12)':
     dependencies:
       '@tanstack/react-query': 5.90.3(react@18.3.1)
       ethers: 6.15.0(bufferutil@4.0.9)(utf-8-validate@5.0.10)
