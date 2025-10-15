@@ -1,7 +1,7 @@
 {
     "cordy__connect" : {
-        "repo" : "https://github.com/cordyStackX/cordyStackX/tree/main/src/app/services/cordy_minikit",
-        "visit" : "https://github.com/cordyStackX/cordyStackX/pkgs/npm/cordy_minikit",
+        "repo" : "https://github.com/cordyStackX/cordy_minikit_official.git",
+        "visit" : "https://github.com/cordyStackX/cordy_minikit_official/pkgs/npm/cordy_minikit",
         "profile" : "/logo.svg",
         "cover__photo" : "/first.png",
         "title" : "Cordy Mini Kit",
