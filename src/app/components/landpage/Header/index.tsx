@@ -76,7 +76,7 @@ export default function Header() {
                     </ul>
                 </nav>
                 <div className={Header__css.wallet__connect}>
-                    <ConnectWalletBT />
+                    <ConnectWalletBT className={Header__css.buttons}/>
                 </div>
             </div>
         </header>
