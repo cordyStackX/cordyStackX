@@ -1,4 +1,3 @@
-import React from "react";
 import { Services__css } from "@/app/config/css/landpage";
 import { useInView } from "@/app/utilities";
 import Image from "next/image";

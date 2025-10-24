@@ -1,4 +1,3 @@
-import React from "react";
 import { Placeholder__css } from "@/app/config/css/landpage";
 import Image from "next/image";
 import image__src from "@/app/config/conf/images.json";

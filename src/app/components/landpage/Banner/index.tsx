@@ -1,4 +1,3 @@
-import React from "react";
 import { Banner__css } from "@/app/config/css/landpage";
 import setting from "@/app/config/conf/setting.json";
 import { 

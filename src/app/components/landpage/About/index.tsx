@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import { About__css } from "@/app/config/css/landpage";
 import image__src from "@/app/config/conf/images.json";

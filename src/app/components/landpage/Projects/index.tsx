@@ -1,4 +1,3 @@
-import React from "react";
 import { Projects__css } from "@/app/config/css/landpage";
 import project__src from "@/app/config/conf/project__links.json";
 import Image from "next/image";

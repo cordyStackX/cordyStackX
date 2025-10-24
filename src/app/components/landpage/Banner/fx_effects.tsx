@@ -1,4 +1,3 @@
-import React from "react";
 import { FX_Effects1_css } from "@/app/config/css/landpage";
 import { UseScroll__Deg } from "@/app/modules";
 import Image from "next/image";
