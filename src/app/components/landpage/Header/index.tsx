@@ -6,7 +6,7 @@ import {
 import Hamburger from "hamburger-react";
 
 import { 
-    ConnectWalletBT, CordyStackTrans
+    ConnectWalletBT
 } from "@cordystackx/cordy_minikit";
 
 import image__src from "@/app/config/conf/images.json";
@@ -14,18 +14,18 @@ import image__src from "@/app/config/conf/images.json";
 export default function Header() {
     const [ isOpen, setOpen ] = UseState(false);
 
-    async function Transacs() {
-        const recipientAddress = "";
-        const amount = 10000000; // Token amount
+    // async function Transacs() {
+    //     const recipientAddress = "";
+    //     const amount = 10000000; // Token amount
 
-        const success = await CordyStackTrans(recipientAddress, amount);
+    //     const success = await CordyStackTrans(recipientAddress, amount);
 
-        if (success) {
-            alert("Transaction successful!");
-        } else {
-            alert("Transaction failed or rejected");
-        }
-    }
+    //     if (success) {
+    //         alert("Transaction successful!");
+    //     } else {
+    //         alert("Transaction failed or rejected");
+    //     }
+    // }
 
     return(
         <header className={Header__css.header__header}>
@@ -90,7 +90,7 @@ export default function Header() {
                 </nav>
                 <div className={Header__css.wallet__connect}>
                     <ConnectWalletBT className={Header__css.buttons}/>
-                    <button onClick={Transacs}>Transac</button>
+                    {/* <button onClick={Transacs}>Transac</button> */}
                 </div>
             </div>
         </header>
