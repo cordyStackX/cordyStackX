@@ -11,8 +11,8 @@
   },
   "dependencies": {
     "@cordystackx/cordy_minikit": "github:cordyStackX/cordy_minikit_official",
-    "@prisma/client": "^6.18.0",
-    "@tanstack/react-query": "^5.90.5",
+    "@prisma/client": "^6.19.0",
+    "@tanstack/react-query": "^5.90.7",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "hamburger-react": "^2.5.2",
@@ -21,18 +21,18 @@
     "react": "19.1.1",
     "react-dom": "19.1.1",
     "react-icons": "^5.5.0",
-    "viem": "^2.38.4"
+    "viem": "^2.39.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
-    "@eslint/js": "^9.38.0",
+    "@eslint/js": "^9.39.1",
     "@next/eslint-plugin-next": "^15.5.6",
-    "@types/node": "^20.19.23",
-    "@types/react": "^19.2.2",
-    "@types/react-dom": "^19.2.2",
-    "@typescript-eslint/eslint-plugin": "^8.46.2",
-    "@typescript-eslint/parser": "^8.46.2",
-    "eslint": "^9.38.0",
+    "@types/node": "^20.19.25",
+    "@types/react": "^19.2.3",
+    "@types/react-dom": "^19.2.3",
+    "@typescript-eslint/eslint-plugin": "^8.46.4",
+    "@typescript-eslint/parser": "^8.46.4",
+    "eslint": "^9.39.1",
     "eslint-config-next": "15.5.2",
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.32.0",
@@ -40,8 +40,8 @@
     "eslint-plugin-no-secrets": "^2.2.1",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "globals": "^16.4.0",
-    "prisma": "^6.18.0",
+    "globals": "^16.5.0",
+    "prisma": "^6.19.0",
     "typescript": "^5.9.3"
   }
 }
