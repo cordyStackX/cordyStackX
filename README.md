@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Welcome to my GitHub
+Hi, I’m Cordy — currently exploring **Web2/Web3 development** 🚀🚀
 
-## Getting Started
+### Badges
+[![wakatime](https://wakatime.com/badge/user/70d9b2a4-4f2e-45b5-9349-2fc8e3974a45.svg)](https://wakatime.com/@70d9b2a4-4f2e-45b5-9349-2fc8e3974a45)
 
-First, run the development server:
+[![Socket Badge](https://badge.socket.dev/npm/package/@cordystackx/cordy_minikit/1.5.1)](https://badge.socket.dev/npm/package/@cordystackx/cordy_minikit/1.5.1)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📊 Stats and Programming Languages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| GitHub Stats | Top Languages |
+|--------------|---------------|
+| ![Cordy's GitHub stats](https://cordystackxdata.vercel.app/api?username=cordyStackX&theme=gotham) | ![Top Langs](https://cordystackxdata.vercel.app/api/top-langs/?username=cordyStackX&langs_count=5&theme=gotham) |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 👨‍💻 Coding Activity
+[![Cordy's WakaTime stats](https://cordystackxdata.vercel.app/api/wakatime?username=cordyStackX&theme=gotham)](https://wakatime.com/@cordyStackX)
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🚀 Portfolio
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🔗 [<-- Porfolio Links -->](https://cordy-stack-x.vercel.app/)
 
-## Deploy on Vercel
+[![Readme Card](https://cordystackxdata.vercel.app/api/pin/?username=cordyStackX&repo=cordyStackX&theme=gotham)](https://github.com/cordyStackX/cordyStackX)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
